@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@utility container {
+    @apply max-w-[1180px] mx-auto px-5;
+}
+
+
+/* Animation to slide up the banner */
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+    max-height: 100px; /* Set this to a value that will always be larger than your banner height */
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+    max-height: 0;
+  }
+}
+.slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+  overflow: hidden; /* Ensures content doesn't overflow during animation */
+}
+
+/* Optional: If needed, you can use custom CSS to reset styles for Swiper's default arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: black; /* Override the default color */
+  width: 55px;
+  height: 55px;
+  font-size: 5px !important;
+}
+
+
+ 
+
+  

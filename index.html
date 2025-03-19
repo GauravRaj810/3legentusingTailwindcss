@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./images/3legant-logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <!-- css linking -->
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- local css -->
+  <link rel="stylesheet" href="./src/style.css">
+  <!-- title -->
+  <title>3Legent- Home</title>
+  <!-- js linking -->
+  <!-- font kit  -->
+  <script src="https://kit.fontawesome.com/78151e0cc2.js" crossorigin="anonymous"></script>
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./src/main.js" defer></script>
+</head>
+
+<body class="font-inter">
+  <!-- promotional banner  -->
+  <div class="w-full  flex items-center justify-center bg-gray-200 py-2 " id="promo-banner">
+    <div class="percent-icon mr-2">
+      <img src="./images/ticket-percent.svg" alt="percentage-icon">
+    </div>
+    <h2 class="font-semibold text-xs sm:text-[16px] md:text[18px] text-slate-800">
+      30% off storewide — Limited time!
+      <a href="https://www.enactsoft.com/solutions/laraback/#"><span
+          class="text-blue-500 ml-1 py-0.5 border-b-1 border-blue-500 cursor-pointer group transition-all hover:text-blue-700">
+          Shop Now
+          <i
+            class="fa-solid fa-arrow-right-long transform transition-transform duration-300 group-hover:translate-x-1 hover:text-blue-700"></i>
+        </span></a>
+    </h2>
+    <!--promotion cross-btn -->
+    <div class="absolute top-2 right-2  sm:right-3 " id="cross-btn"><i
+        class="fa-solid fa-xmark fa-flip-horizontal fa-lg " style="color: #050505;"></i>
+    </div>
+    <!-- end of cross-btn -->
+  </div>
+  <!-- end of promotional banner -->
+  <!-- header -->
+  <div class="container ">
+    <header id="home">
+      <!-- navbar -->
+      <nav class=" flex md:justify-between items-center  py-3 ">
+        <!-- hamburger -->
+        <div class="mobile-menu ml-2 md:hidden">
+          <i class="fa-solid fa-bars fa-lg" style="color: #111212;"></i>
+        </div>
+        <a href="#home" class="relative group">
+          <h2 class="text-[22px] md:text-[24px] font-medium cursor-pointer ml-3 md:ml-0">
+            3legant.
+            <!-- Tooltip -->
+            <span
+              class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max px-2 py-1 text-sm text-white bg-gray-700 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              3Legent is one of the best leading industries in East India.
+            </span>
+          </h2>
+        </a>
+
+        <ul class="gap-10 text-gray-600 font-semibold cursor-pointer hidden md:flex">
+          <li>
+            <a href="#home" class="relative group hover:text-black">
+              Home
+              <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all group-hover:w-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="relative group hover:text-black">
+              Shop
+              <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all group-hover:w-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="relative group hover:text-black">
+              Product
+              <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all group-hover:w-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="relative group hover:text-black">
+              Contact Us
+              <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all group-hover:w-full"></span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- utility bar -->
+        <div class="utility-bar flex gap-4 items-center ">
+          <div class="utility-search-bar hover:cursor-pointer hidden md:block">
+            <img src="./images/search 02.svg" alt="search icon">
+          </div>
+          <div class="utility-user-icon hover:cursor-pointer hidden md:block">
+            <img src="./images/user.svg" alt="user icon">
+          </div>
+          <div class="utility-bag-item hover:cursor-pointer absolute right-9 md:relative md:right-0"
+            title="Get ready to fill you bag!">
+            <img src="./images/shopping bag.svg" alt="bag-icon">
+          </div>
+        </div>
+        <!-- end of utility bar -->
+      </nav>
+      <!-- end of navbar -->
+  </div>
+  </header>
+  <!-- end of header -->
+  <!-- Hero Section -->
+  <section class="w-full  mb-10">
+    <div class="container mx-auto px-4">
+      <div class="swiper mySwiper w-full h-auto mx-auto mb-9">
+        <div class="swiper-wrapper">
+          <!-- swiper slide-1 -->
+          <div class="swiper-slide flex justify-center items-center text-center">
+            <img class="block object-cover w-full h-[330px] sm:h-[400px] md:h-[538px]" src="./images/slider-hero-1.png"
+              alt="">
+          </div>
+          <!-- swiper slide-2 -->
+          <div class="swiper-slide flex justify-center items-center text-center">
+            <video class="w-full h-[330px] sm:h-[400px] md:h-[538px] object-cover" id="swiper-video"
+              src="./videos/7858268-sd_960_506_25fps.mp4" autoplay muted></video>
+          </div>
+          <!-- swiper slide-3 -->
+          <div class="swiper-slide flex justify-center items-center text-center">
+            <video class="w-full h-[330px] sm:h-[400px] md:h-[538px] object-cover" src="./videos/video-hero-2.mp4"
+              autoplay muted></video>
+          </div>
+          <!-- swiper slide-4 -->
+          <div class="swiper-slide flex justify-center items-center text-center">
+            <img class="block object-cover w-full h-[330px] sm:h-[400px] md:h-[538px]"
+              src="./images/slider-hero-img-3.jpg" alt="">
+          </div>
+        </div>
+        <div
+          class="swiper-button-next hidden sm:flex bg-white text-black !rounded-full !p-4 shadow-md hover:bg-gray-200 transition-all">
+        </div>
+        <div
+          class="swiper-button-prev hidden sm:flex bg-white text-black !rounded-full !p-4 shadow-md hover:bg-gray-200 transition-all">
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- hero-section Content-->
+      <div class="flex-col gap-8 lg:gap-3 flex md:flex-row  justify-between items-center ">
+        <div class=" max-w-[643px] ">
+          <h1 class="text-[48px] leading-11 md:text-[52px] md:leading-13  font-medium  lg:leading-18 lg:text-[72px]">
+            Simply Unique<span class="text-green-800">/
+            </span>Simply Better<span class="text-green-800">.</span></h1>
+        </div>
+        <div class="flex items-center max-h-[52px] ">
+          <h2 class="text-[19px] md:text-[20px] font-normal text-green-600"
+            title="3legant is a gift & decorations store based in HCMC, Vietnam. Established since 2019.">
+            <span class="text-slate-700 mr-1 text-[19px] md:text-[20px] font-normal">
+              3legant
+            </span>
+            is a gift & decorations store based in HCMC, Vietnam. Est since 2019.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of hero section -->
+</body>
+</html>
