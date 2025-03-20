@@ -5,6 +5,7 @@
 }
 
 
+
 /* Animation to slide up the banner */
 @keyframes slideUp {
   0% {
@@ -31,6 +32,27 @@
   height: 55px;
   font-size: 5px !important;
 }
+
+
+
+/* Ensure the pagination is at the bottom with a black progress bar */
+.swiper-pagination {
+  position: absolute !important;         /* Position the pagination element absolutely */
+  bottom: 0 !important;                  /* Position it at the bottom */
+  left: 0 !important;                    /* Align it to the left */
+  width: 100%;                /* Full width of the container */
+  height: 6px;                /* Set the height of the progress bar */
+}
+
+.swiper-pagination-progressbar {
+  background-color: lightgray;  /* Make the progress bar black */
+}
+
+/* Optional: if you want to remove any default styles */
+.swiper-pagination .swiper-pagination-progressbar-fill {
+  background-color: #000000 !important;  /* Ensure the progress bar fill is black */
+}
+
 
 
  
