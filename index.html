@@ -43,7 +43,7 @@
     </h2>
     <!--promotion cross-btn -->
     <div class="absolute top-2 right-2  sm:right-3 " id="cross-btn">
-      <i class="fa-solid fa-xmark fa-flip-horizontal fa-lg " style="color: #050505;"></i>
+      <i class="fa-solid fa-xmark fa-flip-horizontal fa-lg  hover:cursor-pointer" style="color: #050505;"></i>
     </div>
     <!-- end of cross-btn -->
   </div>
@@ -197,7 +197,7 @@
             </span>Simply Better<span class="text-green-800">.</span></h1>
         </div>
         <div class="flex items-center max-h-[52px] ">
-          <h2 class="text-[19px] md:text-[20px] font-normal text-green-600"
+          <h2 class="text-[19px] md:text-[20px] font-normal text-[#6C7275]"
             title="3legant is a gift & decorations store based in HCMC, Vietnam. Established since 2019.">
             <span class="text-slate-700 mr-1 text-[19px] md:text-[20px] font-normal">
               3legant
@@ -209,86 +209,66 @@
     </div>
   </section>
   <!-- end of hero section -->
-  <!-- feature section  -->
   <section class="feature-section">
-    <div class="container ">
-      <!-- Desktop Layout -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-4 md:gap-0 ">
-        <!-- Living Room - Larger left section (spans full height) -->
-        <div class="md:col-span-1 md:row-span-2 bg-gray-100 md:p-0 relative">
-          <div class="pt-[48px] pl-[48px]">
-            <h2 class="text-2xl md:text-3xl font-medium mb-3">Living Room</h2>
-            <a href="#"
-              class="inline-flex items-center text-black border-b border-black pb-0.5 hover:text-gray-700 transition-colors">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Living Room - Left section -->
+        <div class="bg-gray-50 p-8 md:h-full flex flex-col">
+          <div class="mb-4">
+            <h2 class="text-3xl font-medium mb-2">Living Room</h2>
+            <a href="#" class="inline-flex items-center text-black border-b border-black pb-0.5 hover:text-gray-700 transition-colors">
               Shop Now
-              <svg xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </a>
           </div>
-          <div class="">
-            <img src="./images/sofa-small.png" alt="Light gray armchair with white cushion" class="max-w-full h-auto">
+          <div class="flex justify-center items-center flex-grow">
+            <img src="./images/sofa-small.png" alt="Light gray armchair" class="w-auto max-h-[300px] object-contain">
           </div>
         </div>
-        <!-- Right column for Bedroom & Kitchen -->
-        <div class="md:col-span-1">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Bedroom Section - Top right -->
-            <div class="bg-gray-100 p-6 md:pt-0 md:pb-0 md:pl-8 md:pr-0  flex  md:col-span-2">
-              <div class="flex gap-15">
-                <div class="flex flex-col justify-end pb-10 lg:pb-15 ">
-                  <h2 class="text-2xl md:text-3xl font-medium mb-3">Bedroom</h2>
-                  <a href="#"
-                    class="inline-flex items-center text-black border-b border-black pb-0.5 hover:text-gray-700 transition-colors">
-                    Shop Now
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                      class="h-4 w-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none"
-                      viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </a>
-                </div>
-                <div class="flex  justify-center max-w-[350px]">
-                  <img src="./images/drawer.png" alt="White and wooden dresser" class="max-w-full h-auto">
-                </div>
+        
+        <!-- Right column (Bedroom & Kitchen) -->
+        <div class="flex flex-col space-y-4">
+          <!-- Bedroom Section -->
+          <div class="bg-gray-50 p-8 flex-1">
+            <div class="flex flex-row justify-between items-center">
+              <div>
+                <h2 class="text-3xl font-medium mb-2">Bedroom</h2>
+                <a href="#" class="inline-flex items-center text-black border-b border-black pb-0.5 hover:text-gray-700 transition-colors">
+                  Shop Now
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <img src="./images/drawer.png" alt="White dresser" class="w-auto max-h-[150px] object-contain">
               </div>
             </div>
-            <!-- Kitchen Section - Bottom right -->
-            <div class="bg-gray-100 p-6 md:pt-8 md:pb-6 md:pl-8 md:pr-0  flex  md:col-span-2 ">
-              <div class="flex gap-25">
-                <div class="flex flex-col justify-end pb-10 lg:pb-10 ">
-                  <h2 class="text-2xl md:text-3xl font-medium mb-3">kitchen</h2>
-                  <a href="#"
-                    class="inline-flex items-center text-black border-b border-black pb-0.5 hover:text-gray-700 transition-colors">
-                    Shop Now
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                      class="h-4 w-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none"
-                      viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </a>
-                </div>
-                <div class="flex  justify-center max-w-[300px]">
-                  <img src="./images/toast-maker.png" alt="White and wooden dresser" class="max-w-full h-auto">
-                </div>
+          </div>
+          
+          <!-- Kitchen Section -->
+          <div class="bg-gray-50 p-8 flex-1">
+            <div class="flex flex-row justify-between items-center">
+              <div>
+                <h2 class="text-3xl font-medium mb-2">Kitchen</h2>
+                <a href="#" class="inline-flex items-center text-black border-b border-black pb-0.5 hover:text-gray-700 transition-colors">
+                  Shop Now
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <img src="./images/toast-maker.png" alt="Toaster" class="w-auto max-h-[150px] object-contain">
               </div>
             </div>
-               <!--End of  Kitchen Section - Bottom right -->
           </div>
         </div>
-        <!--End of  Right column for Bedroom & Kitchen -->
-      </div>
-      <!-- Mobile Layout (similar to your third image) -->
-      <div class="block md:hidden mt-4">
-        <!-- Content auto-stacks in mobile view due to grid-cols-1 -->
       </div>
     </div>
   </section>
-  <!-- end of feature section  -->
   <!-- new Arrival section  -->
   <section class="new-arrival-section my-[50px]">
     <div class="container">
@@ -296,11 +276,11 @@
       <div class="flex justify-between items-end mb-10">
         <!-- new arrival heading  -->
         <div class="max-w-[150px]">
-          <h2 class="text-[42px] font-medium leading-11">New Arrivals </h2>
+          <h2 class=" text-[28px] leading-9 md:text-[42px] font-normal md:font-medium md:leading-11">New Arrivals </h2>
         </div>
         <div class="flex flex-col justify-end ">
           <a href="#"
-            class="inline-flex items-center text-[18px] font-medium text-black border-b border-black pb-0.5 hover:text-gray-800 transition-colors">
+            class="inline-flex items-center text-black border-b font-semibold text-[18px] border-black pb-0.5 hover:text-gray-700 transition-colors group">
             More Products
             <svg xmlns="http://www.w3.org/2000/svg"
               class="h-4 w-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none"
@@ -312,8 +292,8 @@
       </div>
       <!-- end of cta arrival section  -->
       <!-- arrival section slider  -->
-      <div class="swiper featureSwiper w-full my-8">
-        <div class="swiper-wrapper flex">
+      <div class="swiper featureSwiper w-full mt-8 mb-[50px]">
+        <div class="swiper-wrapper flex relative">
           <!-- slide-1 -->
           <div class="swiper-slide">
             <div class="swiper-content-wrapper shadow-md  !bg-gray-100 p-[16px] mx-auto mb-3">
@@ -331,7 +311,7 @@
                 <img src="./images/sofa-signle.png" alt="" class="max-h-full max-w-full object-contain">
               </div>
               <button type="button "
-                class="bg-black text-white font-medium text-[16px] w-full px-16 py-2 rounded-md flex justify-center mb-2">Add
+                class="bg-black text-white font-medium text-[16px] w-full px-12 py-1.5 md:px-16 md:py-2 rounded-md flex justify-center mb-2">Add
                 to cart</button>
             </div>
             <div class="product-description">
@@ -346,7 +326,7 @@
               <p>$199.00 <del class="line-through text-[#6C7275]">$400.00</del></p>
             </div>
           </div>
-            <!-- slide-2 -->
+          <!-- slide-2 -->
           <div class="swiper-slide">
             <div class="swiper-content-wrapper shadow-md  !bg-gray-100 p-[16px] mx-auto mb-3">
               <div class="swiper-content  flex items-center justify-between">
@@ -378,7 +358,7 @@
               <p>$24.99</p>
             </div>
           </div>
-            <!-- slide-3 -->
+          <!-- slide-3 -->
           <div class="swiper-slide">
             <div class="swiper-content-wrapper shadow-md  !bg-gray-100 p-[16px] mx-auto mb-3">
               <div class="swiper-content  flex items-center justify-between">
@@ -410,7 +390,7 @@
               <p>$127.00</p>
             </div>
           </div>
-            <!-- slide-4 -->
+          <!-- slide-4 -->
           <div class="swiper-slide">
             <div class="swiper-content-wrapper shadow-md  !bg-gray-100 p-[16px] mx-auto mb-3">
               <div class="swiper-content  flex items-center justify-between">
@@ -442,7 +422,7 @@
               <p>$452.33</p>
             </div>
           </div>
-            <!-- slide-5-->
+          <!-- slide-5-->
           <div class="swiper-slide">
             <div class="swiper-content-wrapper shadow-md  !bg-gray-100 p-[16px] mx-auto mb-3">
               <div class="swiper-content  flex items-center justify-between">
@@ -453,7 +433,9 @@
                   <img class="max-h-[18px]" src="./images/like.png" alt="">
                 </div>
               </div>
-              <h2 class=" max-w-[70px] bg-[#38CB89] rounded-md text-center text-white font-bold py-1 px-3.5 mt-2.5">-50%
+              <h2
+                class=" max-w-[70px] bg-clr-light-green  rounded-md text-center text-white font-bold py-1 px-3.5 mt-2.5">
+                -50%
               </h2>
               <div class="slider-img h-[180px] flex items-center justify-center mb-3">
                 <img src="./images/sofa-small.png" alt="" class="max-h-full max-w-full object-contain">
@@ -474,7 +456,7 @@
               <p>$42.33</p>
             </div>
           </div>
-            <!-- slide-6 -->
+          <!-- slide-6 -->
           <div class="swiper-slide">
             <div class="swiper-content-wrapper shadow-md  !bg-gray-100 p-[16px] mx-auto mb-3">
               <div class="swiper-content  flex items-center justify-between">
@@ -485,7 +467,9 @@
                   <img class="max-h-[18px]" src="./images/like.png" alt="">
                 </div>
               </div>
-              <h2 class=" max-w-[70px] bg-[#38CB89] rounded-md text-center text-white font-bold py-1 px-3.5 mt-2.5">-50%
+              <h2
+                class=" max-w-[70px] bg-clr-light-green rounded-md text-center text-white font-bold py-1 px-3.5 mt-2.5">
+                -50%
               </h2>
               <div class="slider-img h-[180px] flex items-center justify-center mb-3">
                 <img src="./images/toast-maker.png" alt="" class="max-h-full max-w-full object-contain">
@@ -506,7 +490,7 @@
               <p>$68.99</p>
             </div>
           </div>
-            <!-- slide-7 -->
+          <!-- slide-7 -->
           <div class="swiper-slide">
             <div class="swiper-content-wrapper shadow-md  !bg-gray-100 p-[16px] mx-auto mb-3">
               <div class="swiper-content  flex items-center justify-between">
@@ -543,8 +527,186 @@
         <div class="swiper-pagination"></div>
       </div>
       <!--End of  arrival section slider  -->
+      <!-- customer benifit wrapper -->
+      <div class="grid grid-cols-2 gap-x-2 gap-y-3.5 sm:grid-cols-3 sm:gap-3 md:grid-cols-4">
+        <div class="free-shipping bg-gray-100  pl-[15px] md:pl-[32px] py-[48px] max-w-[263px] w-full">
+          <div class=" max-h-[48px] mb-1">
+            <img src="./images/fast delivery.png" alt="">
+          </div>
+          <h2 class="font-medium text-[20px] mb-2 ">Free Shipping</h2>
+          <p class="text-[#6C7275] font-normal text-[14px]"> Order above $200</p>
+        </div>
+        <div class="free-shipping bg-gray-100  pl-[15px] md:pl-[32px] py-[48px] max-w-[263px] w-full">
+          <div class=" max-h-[48px] mb-1">
+            <img src="./images/money.png" alt="">
+          </div>
+          <h2 class="font-medium text-[20px] mb-2 ">Money-Back</h2>
+          <p class="text-[#6C7275] font-normal text-[14px]">30 days guarantee</p>
+        </div>
+        <div class="free-shipping bg-gray-100  pl-[15px] md:pl-[32px] py-[48px] max-w-[263px] w-full">
+          <div class=" max-h-[48px] mb-1">
+            <img src="./images/lock 01.png" alt="">
+          </div>
+          <h2 class="font-medium text-[20px] mb-2 ">Secure Payments</h2>
+          <p class="text-[#6C7275] font-normal text-[14px]">Secured by Stripe</p>
+        </div>
+        <div class="free-shipping bg-gray-100  pl-[15px] md:pl-[32px] py-[48px] max-w-[263px] w-full">
+          <div class=" max-h-[48px] mb-1">
+            <img src="./images/call.png" alt="">
+          </div>
+          <h2 class="font-medium text-[20px] mb-2 ">24/7 Support</h2>
+          <p class="text-[#6C7275] font-normal text-[14px]">Phone and Email Support</p>
+        </div>
+      </div>
+      <!-- End customer benifit wrapper -->
     </div>
   </section>
-</body>
+  <!-- end of arrival section -->
+  <!-- sale banner section  -->
+  <section class="">
+    <div class="container">
+      <div
+        class="sale-banner-container grid grid-cols-1 gap-5   md:grid-cols-2 jmd:ustify-between md:gap-10 bg-slate-100">
+        <div class="sale-banner-img">
+          <img src="./images/sale-banner.png" alt="">
+        </div>
+        <!-- sale banner description container -->
+        <div class="max-w-[453px] w-full flex flex-col justify-center pl-5 pb-8  md:pl-0  md:pb-0">
+          <!-- sale baner sub-title  -->
+          <h3 class="text-[#377DFF] font-bold  text-[16px] mb-2 lg:mb-3">SALE UP TO 35% OFF</h3>
+          <!-- sale baner title  -->
+          <h2 class="font-medium    text-[25px]  lg:text-[36px] mb-2 lg:mb-3"><span class="uppercase ">hundreds</span>
+            of lower prices!</h2>
 
+          <p class="text-[#141718] text-[17px] md:text-[20px] font-normal mb-2 lg:mb-6">It’s more affordable than ever
+            to give every room in
+            your
+            home a stylish makeover</p>
+          <a href="#"
+            class="inline-flex items-center text-black border-b border-black pb-0.5 hover:text-gray-700 transition-colors group max-w-[100px]">
+            Shop Now
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of sale baneer section  -->
+  <!-- Article section -->
+  <section class="my-[50px]">
+    <!-- article-header -->
+    <div class="container">
+      <!-- CTA article section -->
+      <div class="flex justify-between items-end mb-10 w-full">
+        <div class="max-w-[150px]">
+          <h2 class=" text-[28px] leading-9 md:text-[42px] font-normal md:font-medium md:leading-11">Articles </h2>
+        </div>
+        <div class="flex flex-col justify-end ">
+          <a href="#"
+            class="inline-flex items-center text-black border-b font-semibold text-[18px] border-black pb-0.5 hover:text-gray-700 transition-colors group">
+            More Products
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- article content -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- first content -->
+        <div class=" overflow-hidden ">
+          <div class="h-[325px] overflow-hidden mb-3">
+            <img src="./images/libbooks.png" alt="Library books" class="w-full h-full object-cover">
+          </div>
+          <p class="text-[18px] md:text-[20px] font-medium ">7 ways to decor your home</p>
+          <a href="#"
+            class="inline-flex items-center text-black border-b font-normal text-[14px] border-black pb-0.5 hover:text-gray-700 transition-colors group">
+            Read More
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+        <!-- second content -->
+        <div class=" overflow-hidden ">
+          <div class="h-[325px] overflow-hidden mb-3">
+            <img src="./images/whitebed.png" alt="White bedroom" class="w-full h-full object-cover">
+          </div>
+          <p class="text-[18px] md:text-[20px] font-medium ">Bedroom design ideas</p>
+          <a href="#"
+            class="inline-flex items-center text-black border-b font-normal text-[14px] border-black pb-0.5 hover:text-gray-700 transition-colors group">
+            Read More
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+        <!-- third content -->
+        <div class=" overflow-hidden ">
+          <div class="h-[325px] overflow-hidden mb-3">
+            <img src="./images/kitchen.png" alt="Kitchen" class="w-full h-full object-cover">
+          </div>
+          <p class="text-[18px] md:text-[20px]  font-medium ">Modern kitchen layouts</p>
+          <a href="#"
+            class="inline-flex items-center text-black border-b font-normal text-[14px] border-black pb-0.5 hover:text-gray-700 transition-colors group">
+            Read More
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of Article Section  -->
+   <!-- footer section  -->
+
+   <section class="my-[50px]">
+    <div class="bg-gray-100 py-[95px] px-[32px] w-full relative">
+      <!-- Left Image: Hidden on mobile, shown on desktop -->
+      <div class="drawer-img hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2">
+        <img src="./images/drawer.png" alt="Drawer" />
+      </div>
+
+      <div class="text-center mb-6 max-w-[311px] flex justify-center flex-col">
+        <h2 class="text-[28px] font-medium mb-2">Join Our Newsletter</h2>
+        <p class="text-[14px] text-gray-600">Sign up for deals, new products and promotions</p>
+      </div>
+
+      <!-- Form part -->
+      <form class="flex flex-col md:flex-row items-center gap-4">
+        <div class="relative flex items-center w-full">
+          <div class="absolute left-0 flex items-center pl-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div class="relative w-full">
+            <input type="email" placeholder="Email address" class="w-full py-2 pl-10 pr-20 border-b border-gray-300 bg-transparent focus:outline-none focus:border-gray-500">
+            <button type="submit" class="absolute right-0 top-0 bottom-0 px-4 py-2 text-gray-500 bg-transparent hover:text-gray-900 focus:outline-none">
+              Signup
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- Right Image: Hidden on mobile, shown on desktop -->
+      <div class="drawer-img hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2">
+        <img src="./images/sofa-small.png" alt="Sofa" />
+      </div>
+    </div>
+</section>
+</body>
 </html>

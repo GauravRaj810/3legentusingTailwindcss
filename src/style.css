@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
+
+@theme{
+  --color-clr-light-green:#38CB89;
+}
+
 @utility container {
     @apply max-w-[1180px] mx-auto px-5;
 }
+
+
+
 
 
 
@@ -19,6 +27,7 @@
     max-height: 0;
   }
 }
+
 .slide-up {
   animation: slideUp 0.5s ease-out forwards;
   overflow: hidden; /* Ensures content doesn't overflow during animation */
@@ -35,23 +44,53 @@
 
 
 
+
 /* Ensure the pagination is at the bottom with a black progress bar */
 .swiper-pagination {
-  position: absolute !important;         /* Position the pagination element absolutely */
-  bottom: 0 !important;                  /* Position it at the bottom */
-  left: 0 !important;                    /* Align it to the left */
-  width: 100%;                /* Full width of the container */
-  height: 6px;                /* Set the height of the progress bar */
+  position: absolute !important;        
+  bottom: 0 !important;                 
+  left: 0 !important;                   
+  width: 100%;               
+  height: 6px;               
 }
 
 .swiper-pagination-progressbar {
-  background-color: lightgray;  /* Make the progress bar black */
+  background-color: lightgray;  
 }
-
 /* Optional: if you want to remove any default styles */
 .swiper-pagination .swiper-pagination-progressbar-fill {
   background-color: #000000 !important;  /* Ensure the progress bar fill is black */
 }
+/* media querries for the toaster img */
+@media(max-width:639px){
+  .toaster-img{
+    max-width: 300px;
+  }
+ 
+}
+@media(max-width:483px){
+  .toaster-img{
+    max-width: 250px;
+  }
+}
+@media(max-width:434px){
+  .toaster-img{
+    max-width: 220px;
+  }
+}
+@media(max-width:404px){
+  .toaster-img{
+    max-width: 200px;
+  }
+}
+@media(max-width:386px){
+  .toaster-img{
+    max-width: 170px;
+  }
+}
+
+
+
 
 
 

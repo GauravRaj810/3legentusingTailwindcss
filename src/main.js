@@ -13,9 +13,12 @@ crossBtnIcon.addEventListener("click", function () {
   }, 300); // Match this to your animation duration
 });
 
+
+
 // ****************** hero section swiper    ******************************
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
+  grabCursor: true,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
@@ -23,7 +26,7 @@ var swiper = new Swiper(".mySwiper", {
   },
   autoplay: {
     delay: 2500,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
   breakpoints: {
     768: {
@@ -80,28 +83,37 @@ crossHamburgerBtn.addEventListener("click", showMenu);
 
 // ************ arrival section swiper   ******************************
 var featureSwiper = new Swiper(".featureSwiper", {
-  grabCursor: true,           // Enable grab cursor when hovering over the swiper
-  slidesPerView: "auto",      // Set slides per view to 'auto' to respect the width of each slide
-  spaceBetween: 10,           // Space between slides
+  grabCursor: true,
+  slidesPerView: "auto",
+  spaceBetween: 10,
   pagination: {
-    el: ".swiper-pagination",  // Select pagination container
-    type: "progressbar",      // Set pagination type to progress bar
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   breakpoints: {
     640: {
-      slidesPerView: "auto",   // Keep slides' width as 'auto'
+      slidesPerView: "2",
       spaceBetween: 20,
     },
-    768: {
-      slidesPerView: "auto",   // Keep slides' width as 'auto'
+    862: {
+      slidesPerView: "3",
       spaceBetween: 40,
     },
     1024: {
-      slidesPerView: 4.2,      // Keep slides' width as 'auto'
+      slidesPerView: 4.2,
       spaceBetween: 15,
     },
   },
 });
+
+
+
+
+
 
 
 
