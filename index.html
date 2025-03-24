@@ -216,9 +216,11 @@
         <div class="bg-gray-50 p-8 md:h-full flex flex-col">
           <div class="mb-4">
             <h2 class="text-3xl font-medium mb-2">Living Room</h2>
-            <a href="#" class="inline-flex items-center text-black border-b border-black pb-0.5 hover:text-gray-700 transition-colors">
+            <a href="#"
+              class="inline-flex items-center text-black border-b border-black pb-0.5 hover:text-gray-700 transition-colors">
               Shop Now
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </a>
@@ -227,7 +229,7 @@
             <img src="./images/sofa-small.png" alt="Light gray armchair" class="w-auto max-h-[300px] object-contain">
           </div>
         </div>
-        
+
         <!-- Right column (Bedroom & Kitchen) -->
         <div class="flex flex-col space-y-4">
           <!-- Bedroom Section -->
@@ -235,10 +237,13 @@
             <div class="flex flex-row justify-between items-center">
               <div>
                 <h2 class="text-3xl font-medium mb-2">Bedroom</h2>
-                <a href="#" class="inline-flex items-center text-black border-b border-black pb-0.5 hover:text-gray-700 transition-colors">
+                <a href="#"
+                  class="inline-flex items-center text-black border-b border-black pb-0.5 hover:text-gray-700 transition-colors">
                   Shop Now
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </a>
               </div>
@@ -247,16 +252,19 @@
               </div>
             </div>
           </div>
-          
+
           <!-- Kitchen Section -->
           <div class="bg-gray-50 p-8 flex-1">
             <div class="flex flex-row justify-between items-center">
               <div>
                 <h2 class="text-3xl font-medium mb-2">Kitchen</h2>
-                <a href="#" class="inline-flex items-center text-black border-b border-black pb-0.5 hover:text-gray-700 transition-colors">
+                <a href="#"
+                  class="inline-flex items-center text-black border-b border-black pb-0.5 hover:text-gray-700 transition-colors">
                   Shop Now
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </a>
               </div>
@@ -670,43 +678,151 @@
       </div>
     </div>
   </section>
-  <!-- end of Article Section  -->
-   <!-- footer section  -->
-
-   <section class="my-[50px]">
-    <div class="bg-gray-100 py-[95px] px-[32px] w-full relative">
-      <!-- Left Image: Hidden on mobile, shown on desktop -->
-      <div class="drawer-img hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2">
-        <img src="./images/drawer.png" alt="Drawer" />
+  <!-- newsletter section -->
+  <section class="relative overflow-hidden bg-slate-100">
+    <div class="flex items-center justify-between max-w-screen-xl mx-auto py-[100px]">
+      <!-- Left: Drawer image -->
+      <div
+        class="w-1/3 max-h-[600px] hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 translate-x-[-200px]">
+        <img src="./images/newsletter-2img.png" class="w-full" alt="Drawer" />
       </div>
-
-      <div class="text-center mb-6 max-w-[311px] flex justify-center flex-col">
-        <h2 class="text-[28px] font-medium mb-2">Join Our Newsletter</h2>
-        <p class="text-[14px] text-gray-600">Sign up for deals, new products and promotions</p>
-      </div>
-
-      <!-- Form part -->
-      <form class="flex flex-col md:flex-row items-center gap-4">
-        <div class="relative flex items-center w-full">
-          <div class="absolute left-0 flex items-center pl-3">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      <!-- Center: Newsletter signup -->
+      <div class="w-full md:w-2/4 text-center px-4 mx-auto relative z-10">
+        <div class="mb-6">
+          <h2 class="text-3xl font-medium mb-2">Join Our Newsletter</h2>
+          <p class="text-sm text-gray-600">Sign up for deals, new products and promotions</p>
+        </div>
+        <!-- Form -->
+        <div class="flex border-b border-gray-300 max-w-md mx-auto">
+          <div class="flex items-center mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
-          <div class="relative w-full">
-            <input type="email" placeholder="Email address" class="w-full py-2 pl-10 pr-20 border-b border-gray-300 bg-transparent focus:outline-none focus:border-gray-500">
-            <button type="submit" class="absolute right-0 top-0 bottom-0 px-4 py-2 text-gray-500 bg-transparent hover:text-gray-900 focus:outline-none">
-              Signup
-            </button>
-          </div>
+          <input type="email" placeholder="Email address" class="flex-grow py-2 bg-transparent focus:outline-none">
+          <button type="submit" class="text-gray-500 hover:text-gray-900 focus:outline-none">
+            Signup
+          </button>
         </div>
-      </form>
-
-      <!-- Right Image: Hidden on mobile, shown on desktop -->
-      <div class="drawer-img hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2">
-        <img src="./images/sofa-small.png" alt="Sofa" />
+      </div>
+      <!-- Right: Sofa image -->
+      <div
+        class="max-w-[900px] hidden lg:block absolute right-0 top-[200px] transform -translate-y-1/2 translate-x-[500px]">
+        <img src="./images/newsletter-img-1.png" class=" w-[900px]  xl:w-[1000px] max-h-[500px]"
+          alt="Armchair with throw blanket" />
       </div>
     </div>
-</section>
+  </section>
+  <!-- footer section -->
+  <section class="bg-black text-white">
+    <div class="container  pt-[80px] pb-[55px] ">
+      <!-- Desktop version -->
+      <div class="hidden md:block">
+        <!-- Top section with logo and navigation -->
+        <div class="flex justify-between items-center mb-6">
+          <!-- Left: Logo and tagline -->
+          <div class="flex items-center">
+            <h2 class="text-[22px] font-medium mr-6">3legant.</h2>
+            <div class="w-px h-6 bg-gray-700 mx-4"></div>
+            <p class="text-[14px] text-gray-300">Gift & Decoration Store</p>
+          </div>
+          <!-- Right: Navigation links -->
+          <ul class="flex items-center gap-8 text-[14px]">
+            <li class="cursor-pointer hover:text-gray-300">Home</li>
+            <li class="cursor-pointer hover:text-gray-300">Shop</li>
+            <li class="cursor-pointer hover:text-gray-300">Product</li>
+            <li class="cursor-pointer hover:text-gray-300">Blog</li>
+            <li class="cursor-pointer hover:text-gray-300">Contact Us</li>
+          </ul>
+        </div>
+        <!-- Bottom section with copyright and social -->
+        <div class="border-t border-gray-800 pt-6">
+          <div class="flex justify-between items-center">
+            <!-- Left: Copyright text -->
+            <div class="text-[12px] text-gray-300">
+              Copyright © 2023 3legant. All rights reserved
+            </div>
+            <!-- Middle: Terms links -->
+            <div class="flex gap-4 text-[12px] text-gray-300">
+              <a href="#" class="hover:text-white">Privacy Policy</a>
+              <a href="#" class="hover:text-white">Terms of Use</a>
+            </div>
+            <!-- Right: Social icons -->
+            <div class="flex gap-6">
+              <a href="#" aria-label="Instagram" class="hover:text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" aria-label="Facebook" class="hover:text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="YouTube" class="hover:text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
+                  <path d="m10 15 5-3-5-3z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile version (exactly matching the image) -->
+      <div class="md:hidden flex flex-col items-center text-center">
+        <!-- Logo section -->
+        <h2 class="text-[22px] font-medium mb-4">3legant.</h2>
+        <div class="w-[40px] h-[1px] bg-gray-700 mb-4"></div>
+        <p class="text-[14px] text-gray-300 mb-8">Gift & Decoration Store</p>
+        <!-- Navigation links - vertical stack -->
+        <ul class="flex flex-col gap-6 text-[14px] mb-8">
+          <li class="cursor-pointer hover:text-gray-300">Home</li>
+          <li class="cursor-pointer hover:text-gray-300">Shop</li>
+          <li class="cursor-pointer hover:text-gray-300">Product</li>
+          <li class="cursor-pointer hover:text-gray-300">Blog</li>
+          <li class="cursor-pointer hover:text-gray-300">Contact Us</li>
+        </ul>
+        <!-- Horizontal divider -->
+        <div class="w-full h-[1px] bg-gray-800 mb-8"></div>
+        <!-- Social icons -->
+        <div class="flex justify-center gap-6 mb-4">
+          <a href="#" aria-label="Instagram" class="hover:text-gray-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="hover:text-gray-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube" class="hover:text-gray-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+              <path d="M2.5 17a24.12 24.12 0 0 1 0-10a2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
+              <path d="m10 15 5-3-5-3z"></path>
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Privacy and Terms links -->
+        <div class="flex justify-center gap-4 text-[12px] text-gray-300 mb-4">
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+          <a href="#" class="hover:text-white">Terms of Use</a>
+        </div>
+        
+        <!-- Copyright text -->
+        <div class="text-[12px] text-gray-300">
+          Copyright © 2023 3legant. All rights reserved
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
