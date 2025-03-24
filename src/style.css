@@ -94,6 +94,21 @@
 
 
 
+/* sign up page  */
+@media (max-width: 768px) {
+  .sign-up-wrapper {
+      flex-direction: column;
+  }
+  .img-holder, .form-section {
+      width: 100%;
+  }
+  .img-holder {
+      height: 40vh;
+  }
+}
+
+
+
 
 
 
