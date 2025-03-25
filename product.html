@@ -320,8 +320,318 @@
   <!-- tabs section with review , Questions  -->
   <section class="mb-[50px] ">
     <div class="container">
+       <!-- dropdown mobile -->
+       <div class="dropdown-mobile  block md:hidden">
+        <div class="w-full bg-white  ">
+            <div class="border-b">
+                <button class="w-full text-left py-2 font-semibold flex justify-between items-center" onclick="toggleSection('info')">
+                    Additional Info
+                    <span><i class="fa-solid fa-arrow-down fa-md" style="color: #19191a;"></i></span>
+                </button>
+                <div id="info" class="hidden py-2 text-gray-700">
+                  <div class="space-y-6">
+                    <h2 class="text-3xl font-bold text-gray-800">
+                      Additional Information
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed">
+                      Explore comprehensive details about our innovative approach,
+                      key features, and unique value proposition. This section
+                      provides deeper insights into our mission, methodology,
+                      and the transformative solutions we offer.
+                    </p>
+                    <div class="flex space-x-4">
+                      <button class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                        Learn More
+                      </button>
+                      <button
+                        class="border border-blue-500 text-blue-500 px-6 py-2 rounded-lg hover:bg-blue-50 transition-colors">
+                        Contact Us
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+    
+            <div class="border-b">
+                <button class="w-full text-left py-2 font-semibold flex justify-between items-center" onclick="toggleSection('questions')">
+                    Questions
+                    <span><i class="fa-solid fa-arrow-down fa-md" style="color: #19191a;"></i></span>
+                </button>
+                <div id="questions" class="hidden py-2 text-gray-700">
+                  <div class="space-y-6">
+                    <h2 class="text-3xl font-bold text-gray-800">
+                      Frequently Asked Questions
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed">
+                      Find answers to the most common questions about our services,
+                      approach, and solutions. Our comprehensive FAQ section is
+                      designed to provide clear, concise information to help you
+                      make informed decisions.
+                    </p>
+                    <div class="space-y-4">
+                      <details class="border-b pb-2">
+                        <summary class="cursor-pointer font-semibold text-gray-700 hover:text-blue-600 transition-colors">
+                          What services do you offer?
+                        </summary>
+                        <p class="text-gray-600 mt-2">
+                          We provide comprehensive consulting, technology solutions,
+                          and strategic support across multiple industries.
+                        </p>
+                      </details>
+                      <details class="border-b pb-2">
+                        <summary class="cursor-pointer font-semibold text-gray-700 hover:text-blue-600 transition-colors">
+                          How can I get started?
+                        </summary>
+                        <p class="text-gray-600 mt-2">
+                          Contact our team for a free initial consultation.
+                          We'll discuss your needs and create a tailored approach.
+                        </p>
+                      </details>
+                      <details class="border-b pb-2">
+                        <summary class="cursor-pointer font-semibold text-gray-700 hover:text-blue-600 transition-colors">
+                          What is our core value ?
+                        </summary>
+                        <p class="text-gray-600 mt-2">
+                          Contact our team for a free initial consultation.
+                          We'll discuss your needs and create a tailored approach.
+                        </p>
+                      </details>
+                    </div>
+                    <div class="flex space-x-4 pt-4">
+                      <button class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                        View All Questions
+                      </button>
+                      <button
+                        class="border border-blue-500 text-blue-500 px-6 py-2 rounded-lg hover:bg-blue-50 transition-colors">
+                        Contact Support
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+    
+            <div>
+                <button class="w-full text-left py-2 font-semibold flex justify-between items-center" onclick="toggleSection('reviews')">
+                    Reviews (11)
+                    <span><i class="fa-solid fa-arrow-down fa-md" style="color: #19191a;"></i></span>
+                </button>
+                <div id="reviews" class="hidden py-2 text-gray-700">
+                  <div class="">
+                    <h2 class="text-[28px] font-medium mb-[24px]">Customer Reviews</h2>
+                  </div>
+        
+                  <div class="flex items-center gap-3 mb-3.5">
+                    <div class="star">
+                      <i class="fa-solid fa-star" style="color: #080808;"></i>
+                      <i class="fa-solid fa-star" style="color: #080808;"></i>
+                      <i class="fa-solid fa-star" style="color: #080808;"></i>
+                      <i class="fa-solid fa-star" style="color: #080808;"></i>
+                      <i class="fa-regular fa-star" style="color: #080808;"></i>
+                    </div>
+                    <p class="text-base">11 reviews</p>
+                  </div>
+                  <div class="mb-3.5">
+                    <p class="text-[18px]">Be the first to review <span class="font-semibold text-[20px]">Tray Table</span></p>
+                  </div>
+                  <div
+                    class="flex w-full max-h-[72px] border-2 border-[#E8ECEF] justify-between items-center p-2.5 rounded-2xl mb-8">
+                    <textarea class="flex-grow resize-none outline-none placeholder-gray-400 mr-4 te"
+                      placeholder="Write your review here..."></textarea>
+                    <button type="button" class="bg-black text-white px-[40px] py-[9px] rounded-full text-[16px]">
+                      Write Review
+                    </button>
+                  </div>
+                  <div class="flex justify-between mb-[40px]">
+                    <h2 class="text-[28px] font-medium">11 Reviews</h2>
+                    <select id="sortOptions" name="sort"
+                      class="border-2 border-[#E8ECEF] rounded-md pr-[80px] pl-3.5 py-[10px] ">
+                      <option class="text-[17px] font-semibold" value="Newest">Newest</option>
+                      <option class="text-[17px] font-semibold" value="Oldest">Oldest</option>
+                      <option class="text-[17px] font-semibold" value="Low">Trending</option>
+                    </select>
+                  </div>
+                  <!-- Review part -->
+                  <div class="max-w-full w-full flex flex-col gap-y-9 mb-6">
+                    <!-- 1st person review -->
+                    <div class="flex items-start space-x-[40px] border-b-2 border-slate-100 pb-[24px]">
+                      <img
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt="Profile" class="w-16 h-16 rounded-full object-cover">
+                      <div class="flex-1">
+                        <div class="flex justify-between items-center">
+                          <h2 class="font-semibold text-lg">Sofia Harvetz</h2>
+                        </div>
+                        <div class="text-black-500 mb-2">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-lg font-normal">
+                          I bought it 3 weeks ago and now come back just to say "Awesome Product". I really enjoy it. At vero
+                          eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                          atque corrupt et quas molestias excepturi sint non provident.
+                        </p>
+                        <div class="flex gap-2.5 ml-[10%]">
+                          <button class="hover:cursor-pointer ">Like</button>
+                          <button class="hover:cursor-pointer">Reply</button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of 1st person review -->
+                    <div class="flex items-start space-x-[40px] border-b-2 border-slate-100 pb-[24px]">
+                      <img
+                        src="https://s3-alpha-sig.figma.com/img/2d68/b448/ac71ffb74b99039b69fca7eb2adeecf4?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=NNdz0ZECYvshBxItqOo5XNhAfyG11PhPtCW8ajXUY0o54ZqUDtOrltmJB0O3ygMUxE2866sWazbusZ-vwRLvMM1jcD5lgnxroZ06z4D2yHKc-kaefrFPs14MoP4FePCGF0TqL-dezmdS6rBM2J9yanCG7v0F6xsXMRz0dy2sB0rO80S7yJZfJR6WuxU9wSd~G9iodDtXtwq8LX9cy~xm1Gls9WvN6UuABwHd3s5VUaAdHceguXmsLxqCSCv~9-RYaeZfT6zFjCYQmLwB3-MgEzRH9kcoz4uArL2t4MJHpKuCIqTS8IOBSuRlFay6VUPRRDjsH-7K4LwVfsvdZcrv5g__"
+                        alt="Profile" class="w-16 h-16 rounded-full object-cover">
+                      <div class="flex-1">
+                        <div class="flex justify-between items-center">
+                          <h2 class="font-semibold text-lg">Sofia Harvetz</h2>
+                        </div>
+                        <div class="text-black-500 mb-2">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-lg font-normal">
+                          I bought it 3 weeks ago and now come back just to say "Awesome Product". I really enjoy it. At vero
+                          eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                          atque corrupt et quas molestias excepturi sint non provident.
+                        </p>
+                        <div class="flex gap-2.5 ml-[10%]">
+                          <button class="hover:cursor-pointer ">Like</button>
+                          <button class="hover:cursor-pointer">Reply</button>
+                        </div>
+        
+                      </div>
+                    </div>
+                    <!-- end of 1st person review -->
+                    <div class="flex items-start space-x-[40px] border-b-2 border-slate-100 pb-[24px]">
+                      <img
+                        src="https://s3-alpha-sig.figma.com/img/fef2/b7d7/6bcbfccd1f6e6a542aa3e3cb0306f89c?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=kaDXS7N56cd4JzTorDKUOtgXq4vlpGaKLNsgV0mEDL3eaNs0yUETbKezbSdwO8phEVkrux8yKob9iQNsQSCziMRckY32sONZYW8Jq6k3vac3NJixpkHUW2Z2miWEzKjaxSTEQt4d48jtHLHdNpaTYiRc1Em38BpOZ~xepD5HHXGJutnpmYenyEc4FCmTmMxJlsuLyer2cGdBvIquOAXh-cpp2USoVJbpQI9whhAfRO0gR8HVjr29Zbavcy9J5X96-L2eU2Q~6OLRn~dgRUNpqQ0qYOVHjyIQlswa3WYKcAeeK5UzA8WkFBpy06WQhalYrZLeDuA5x0qKwZNs4UOK2A__"
+                        alt="Profile" class="w-16 h-16 rounded-full object-cover">
+                      <div class="flex-1">
+                        <div class="flex justify-between items-center">
+                          <h2 class="font-semibold text-lg">Sofia Harvetz</h2>
+                        </div>
+                        <div class="text-black-500 mb-2">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-lg font-normal">
+                          I bought it 3 weeks ago and now come back just to say "Awesome Product". I really enjoy it. At vero
+                          eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                          atque corrupt et quas molestias excepturi sint non provident.
+                        </p>
+                        <div class="flex gap-2.5 ml-[10%]">
+                          <button class="hover:cursor-pointer ">Like</button>
+                          <button class="hover:cursor-pointer">Reply</button>
+                        </div>
+        
+                      </div>
+                    </div>
+                    <!-- end of 1st person review -->
+                    <div class="flex items-start space-x-[40px] border-b-2 border-slate-100 pb-[24px]">
+                      <img
+                        src="https://s3-alpha-sig.figma.com/img/a341/aaf6/e8f8169ad00cac006584058d85fc5dad?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JZNB4B5bn2q4W9pnO~feuYqsJoYL1xstyanPKYwEIM5fJV9iE7bfuMT0HFhRXuMlgvHuGCmfnrrhC5HtJscMWEi9PxKEaFcTyHv5IYH7EorMFLI8p8GF0XozYsbdEQdHGpZjWyByKNm5Iio0qW4dIAiEyKjPxmwOWWtB~DxcOiwJIdK8kaW1NviXUnGAs6s231GI09eIUQwY4pqAuQkc4~z5cwdHZzZchbNBiSI2xYe3KOwHVmsKICMNJqv4bDHx9YmEIEPHildinCtqFmwc7-Izg-VL6xxxeu1shRk~49u3mdRHQqnOhzF0YoNHwdRNXfCPFx9dMY5e215rPIq-pg__"
+                        alt="Profile" class="w-16 h-16 rounded-full object-cover">
+                      <div class="flex-1">
+                        <div class="flex justify-between items-center">
+                          <h2 class="font-semibold text-lg">Sofia Harvetz</h2>
+                        </div>
+                        <div class="text-black-500 mb-2">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-lg font-normal">
+                          I bought it 3 weeks ago and now come back just to say "Awesome Product". I really enjoy it. At vero
+                          eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                          atque corrupt et quas molestias excepturi sint non provident.
+                        </p>
+                        <div class="flex gap-2.5 ml-[10%]">
+                          <button class="hover:cursor-pointer ">Like</button>
+                          <button class="hover:cursor-pointer">Reply</button>
+                        </div>
+        
+                      </div>
+                    </div>
+                    <!-- end of 1st person review -->
+                    <div class="flex items-start space-x-[40px] border-b-2 border-slate-100 pb-[24px]">
+                      <img
+                        src="https://s3-alpha-sig.figma.com/img/fbee/bffb/ad67ac62a1529eb723526726093127ba?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=lfcWjKFxi-iF0zDMa1PvjLrGg-hCZwUpeOSv4ekXf-X66Qy0Y2ftfwz5qcedy2OmEQLPO3vAem8JOAJtEp9ty5ZKJXcFckHPV3HTlBN-Aiejq3dy9k-o-~mcL0JGtJYATrWCDziHYpZoZxv9qCJuld6qAdpKA6kX8tE0jUOL~fhs5giOYPdiA7PZQ7cISCXZKA1CE9bWNnEMpbWoEHF4R6xWpd~VIuJkgf7aT6yCPnwoX6wwfRUEzmkHcFRtqVeVpg9OSGp6366wfsdhI3jn1oo8ARKaePwcezOce20h~QOziGHmy-GNgg7Z4mDy6Ep4hUDVLj7dGpv6fm9-XipuPw__"
+                        alt="Profile" class="w-16 h-16 rounded-full object-cover">
+                      <div class="flex-1">
+                        <div class="flex justify-between items-center">
+                          <h2 class="font-semibold text-lg">Sofia Harvetz</h2>
+                        </div>
+                        <div class="text-black-500 mb-2">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-lg font-normal">
+                          I bought it 3 weeks ago and now come back just to say "Awesome Product". I really enjoy it. At vero
+                          eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                          atque corrupt et quas molestias excepturi sint non provident.
+                        </p>
+                        <div class="flex gap-2.5 ml-[10%]">
+                          <button class="hover:cursor-pointer ">Like</button>
+                          <button class="hover:cursor-pointer">Reply</button>
+                        </div>
+        
+                      </div>
+                    </div>
+                    <!-- end of 1st person review -->
+                    <div class="flex items-start space-x-[40px] border-b-2 border-slate-100 pb-[24px]">
+                      <img
+                        src="https://s3-alpha-sig.figma.com/img/afbd/ad72/fa5447b52d45b50abafb9a689af596ab?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FMdknE84dxuTDRV-Vq3-08W3wEHFFVc~kBEuj3vvvlk1EFPNbX~P7nLEoSwCI34xoZW4V4VfdOCoZDq9Yhfi27RJd1L-6l~QuEqLwJTWfmgYuLDIpkCtCyd8KLpTRaH5vV1GWjZxOWS1Ph2sRhFkeMzkyQTyTE9Qxd6Lsx6U9SlRGvfhB3G~fniHTnVuFi7CcqjDCLkJ-aalQpi7NAnpPTo0FuSvt4djdUOiHSh2xUtjQ4tspYc9HaXhLpXbIlISaClxZWVNbYqIBvpwcAdp4hpS3bsxSIpGZZZGHWY6A5tP83os8yDdbnXfaoy8ez3XLmaq8WBYAJ~Enb8aCgmobg__"
+                        alt="Profile" class="w-16 h-16 rounded-full object-cover">
+                      <div class="flex-1">
+                        <div class="flex justify-between items-center">
+                          <h2 class="font-semibold text-lg">Sofia Harvetz</h2>
+                        </div>
+                        <div class="text-black-500 mb-2">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-lg font-normal">
+                          I bought it 3 weeks ago and now come back just to say "Awesome Product". I really enjoy it. At vero
+                          eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                          atque corrupt et quas molestias excepturi sint non provident.
+                        </p>
+                        <div class="flex gap-2.5 ml-[10%]">
+                          <button class="hover:cursor-pointer ">Like</button>
+                          <button class="hover:cursor-pointer">Reply</button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of  person review -->
+                  </div>
+                  <!-- end of review part -->
+                  <div class="flex justify-center">
+                    <button class="text-[#141718] rounded-full border-2 py-[6px] px-[40px] font-medium text-[16px] hover:bg-slate-200 transition-all hover:cursor-pointer">Load More
+                    </button>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+        <!-- end of dropdown mobile -->
       <!-- tab section for review  -->
-      <div class="mt-5 ">
+      <div class="mt-5  hidden md:block">
         <!-- Tab Navigation -->
         <div class="flex space-x-6 border-b border-gray-200 ">
           <button class="py-2 px-4 text-xl font-semibold text-gray-600 hover:text-black focus:outline-none" id="tab-1"
@@ -811,5 +1121,9 @@
       </div>
     </div>
   </section>
+
+   
+
+
 </body>
 </html>

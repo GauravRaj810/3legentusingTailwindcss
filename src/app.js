@@ -68,35 +68,7 @@ showTab(1);
 
 
 
-
-const searchToggle = document.getElementById('search-toggle');
-const searchContainer = document.getElementById('search-container');
-const searchInput = document.getElementById('search-input');
-let isSearchOpen = false;
-
-searchToggle.addEventListener('click', () => {
-    if (!isSearchOpen) {
-        // Open search
-        searchContainer.classList.remove('scale-x-0', 'opacity-0');
-        searchContainer.classList.add('scale-x-100', 'opacity-100');
-        setTimeout(() => {
-            searchInput.focus();
-        }, 300);
-    } else {
-        // Close search
-        searchContainer.classList.remove('scale-x-100', 'opacity-100');
-        searchContainer.classList.add('scale-x-0', 'opacity-0');
-    }
-    isSearchOpen = !isSearchOpen;
-});
-
-// Close search when clicking outside
-document.addEventListener('click', (event) => {
-    if (isSearchOpen && 
-        !searchContainer.contains(event.target) && 
-        !searchToggle.contains(event.target)) {
-        searchContainer.classList.remove('scale-x-100', 'opacity-100');
-        searchContainer.classList.add('scale-x-0', 'opacity-0');
-        isSearchOpen = false;
-    }
-});
+function toggleSection(id) {
+    const section = document.getElementById(id);
+    section.classList.toggle("hidden");
+}
