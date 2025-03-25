@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" href="./images/3legant-logo.png" />
@@ -22,8 +23,9 @@
   <script src="https://kit.fontawesome.com/78151e0cc2.js" crossorigin="anonymous"></script>
   <!-- swiper js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./src/main.js" defer></script>
+  <script src="./src/app.js" defer></script>
 </head>
+
 <body class="font-inter">
   <!-- promotional banner  -->
   <div class="w-full  flex items-center justify-center bg-gray-200 py-2 " id="promo-banner">
@@ -121,8 +123,7 @@
     <nav class="flex" aria-label="Breadcrumb">
       <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
         <li class="inline-flex items-center">
-          <a href="./index.html"
-            class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-950">
+          <a href="./index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-950">
             <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
               viewBox="0 0 20 20">
               <path
@@ -154,16 +155,12 @@
         </li>
       </ol>
     </nav>
-    <!-- end of breadcumb -->
-
-
-   
-    <!-- Product Slider and description section -->
-
-
-    <section>
-      <!-- Product Container -->
-      <div class="container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+  </div>
+  <!-- end of breadcumb -->
+  <!-- thumb swiper for the product  -->
+  <section class="product-swiper-section">
+    <div class="container">
+      <div class="mx-auto py-8 flex flex-col md:flex-row gap-8">
         <!-- Left Column: Product Images -->
         <div class="w-full md:w-1/2">
           <!-- Main Product Image Slider -->
@@ -177,42 +174,38 @@
               -50%
             </div>
             <!-- Main Image Swiper -->
-            <div class="swiper product-main-swiper w-full h-[500px]">
+            <div class="swiper product-main-swiper w-full h-[414px]  sm:h-[728px]">
               <div class="swiper-wrapper">
                 <div class="swiper-slide bg-gray-100 flex items-center justify-center">
-                  <img src="./images/table-product.png" class="object-contain max-h-full" alt="Tray Table Black" />
+                  <img src="./images/table-product.png" class="object-contain w-full h-full" alt="Tray Table Black" />
                 </div>
-                <div class="swiper-slide bg-gray-100">
-                  <img src="tray-table-detail.jpg" class="object-contain max-h-full" alt="Tray Table Detail" />
+                <div class="swiper-slide bg-gray-100 flex items-center justify-center">
+                  <img src="./images/t-1.jpg" class="w-full h-full" alt="Tray Table Detail" />
                 </div>
-                <div class="swiper-slide bg-gray-100">
-                  <img src="tray-table-usage.jpg" class="object-contain max-h-full" alt="Tray Table In Use" />
+                <div class="swiper-slide bg-gray-100 flex items-center justify-center">
+                  <img src="./images/t-2.jpg" class="w-full h-full" alt="Tray Table In Use" />
                 </div>
               </div>
               <!-- Navigation Arrows -->
-              <div class="absolute left-2 top-1/2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md z-10 cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg>
+              <div
+                class="absolute  !hidden left-2 top-1/2 transform -translate-y-1/2 w-8 h-8 md:!flex items-center justify-center bg-white rounded-full shadow-md z-10 cursor-pointer swiper-button-prev">
               </div>
-              <div class="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md z-10 cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
+              <div
+                class="absolute   !hidden right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 md:!flex items-center justify-center bg-white rounded-full shadow-md z-10 cursor-pointer swiper-button-next">
               </div>
             </div>
           </div>
           <!-- Thumbnails -->
-          <div class="swiper product-thumbs-swiper w-full h-24">
+          <div class="swiper product-thumbs-swiper w-full h-[75px] sm:h-[167px] ">
             <div class="swiper-wrapper">
-              <div class="swiper-slide border border-gray-200">
+              <div class="swiper-slide border border-gray-200 ">
                 <img src="./images/img-1-table.png" class="object-cover w-full h-full" alt="Thumbnail 1" />
               </div>
               <div class="swiper-slide border border-gray-200">
-                <img src="./images/Paste Image.png" class="object-cover w-full h-full" alt="Thumbnail 2" />
+                <img src="./images/t-1.jpg" class="object-cover w-full h-full" alt="Thumbnail 2" />
               </div>
               <div class="swiper-slide border border-gray-200">
-                <img src="./images/table-thumb-img.png" class="object-cover w-full h-full" alt="Thumbnail 3" />
+                <img src="./images/t-2.jpg" class="object-cover w-full h-full" alt="Thumbnail 3" />
               </div>
             </div>
           </div>
@@ -226,50 +219,57 @@
             </div>
             <span class="text-gray-600">11 Reviews</span>
           </div>
-          
+
           <!-- Product Title -->
           <h1 class="text-4xl font-bold mb-4">Tray Table</h1>
-          
+
           <!-- Product Description -->
           <p class="text-gray-600 mb-6">
-            Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with removable tray top, handy for serving snacks.
+            Buy one or buy a few and make every space where you sit more convenient. Light and easy to move around with
+            removable tray top, handy for serving snacks.
           </p>
-          
+
           <!-- Price -->
           <div class="flex items-center gap-3 mb-6">
             <span class="text-3xl font-bold">$199.00</span>
             <span class="text-gray-500 line-through">$400.00</span>
           </div>
-          
+
           <!-- Countdown Timer -->
           <div class="mb-6">
             <p class="text-gray-600 mb-2">Offer expires in:</p>
             <div class="flex gap-3">
               <div class="flex flex-col items-center">
-                <div class="w-16 h-16 bg-gray-100 flex items-center justify-center text-2xl font-bold countdown-days">02</div>
+                <div class="w-16 h-16 bg-gray-100 flex items-center justify-center text-2xl font-bold countdown-days">02
+                </div>
                 <span class="text-sm text-gray-500">Days</span>
               </div>
               <div class="flex flex-col items-center">
-                <div class="w-16 h-16 bg-gray-100 flex items-center justify-center text-2xl font-bold countdown-hours">12</div>
+                <div class="w-16 h-16 bg-gray-100 flex items-center justify-center text-2xl font-bold countdown-hours">
+                  12</div>
                 <span class="text-sm text-gray-500">Hours</span>
               </div>
               <div class="flex flex-col items-center">
-                <div class="w-16 h-16 bg-gray-100 flex items-center justify-center text-2xl font-bold countdown-minutes">45</div>
+                <div
+                  class="w-16 h-16 bg-gray-100 flex items-center justify-center text-2xl font-bold countdown-minutes">45
+                </div>
                 <span class="text-sm text-gray-500">Minutes</span>
               </div>
               <div class="flex flex-col items-center">
-                <div class="w-16 h-16 bg-gray-100 flex items-center justify-center text-2xl font-bold countdown-seconds">05</div>
+                <div
+                  class="w-16 h-16 bg-gray-100 flex items-center justify-center text-2xl font-bold countdown-seconds">05
+                </div>
                 <span class="text-sm text-gray-500">Seconds</span>
               </div>
             </div>
           </div>
-    
+
           <!-- Measurements -->
           <div class="mb-6">
             <h3 class="text-lg mb-2">Measurements</h3>
             <p class="text-xl">17 1/2×20 5/8 "</p>
           </div>
-          
+
           <!-- Color Selection -->
           <div class="mb-6">
             <div class="flex items-center mb-2">
@@ -280,7 +280,7 @@
               <!-- Color selection boxes (as in your original code) -->
             </div>
           </div>
-    
+
           <!-- Quantity -->
           <div class="flex items-center gap-4 mb-6">
             <div class="flex items-center border border-gray-300">
@@ -289,8 +289,10 @@
               <button class="px-4 py-2 text-lg">+</button>
             </div>
             <button class="border border-gray-300 rounded-md px-4 py-2 flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
               Wishlist
             </button>
@@ -299,7 +301,7 @@
           <button class="w-full bg-black text-white font-medium py-3 mb-6">
             Add to Cart
           </button>
-          
+
           <!-- Product Info -->
           <div class="border-t border-gray-200 pt-4">
             <div class="flex justify-between py-2">
@@ -313,7 +315,505 @@
           </div>
         </div>
       </div>
-    </section>
-    
+    </div>
+  </section>
+  <!-- end of product thumb swiper section  -->
+
+  <!-- tabs section with review , Questions  -->
+  <section class="mb-[50px] ">
+    <div class="container">
+      <!-- tab section for review  -->
+      <div class="mt-5 ">
+        <!-- Tab Navigation -->
+        <div class="flex space-x-6 border-b border-gray-200">
+          <button class="py-2 px-4 text-xl font-semibold text-gray-600 hover:text-black focus:outline-none" id="tab-1"
+            onclick="showTab(1)">
+            Additional Info
+          </button>
+          <button class="py-2 px-4 text-xl font-semibold text-gray-600 hover:text-blackfocus:outline-none" id="tab-2"
+            onclick="showTab(2)">
+            Questions
+          </button>
+          <button class="py-2 px-4 text-xl font-semibold text-gray-600 hover:text-black focus:outline-none" id="tab-3"
+            onclick="showTab(3)">
+            Reviews
+          </button>
+        </div>
+        <!-- Tab Content -->
+        <div id="tab-content-1" class="tab-content mt-4">
+          <div class="h-[60vh] flex items-center justify-center py-12 ">
+            <div class="container mx-auto grid md:grid-cols-2 gap-8 items-center">
+              <div class="space-y-6">
+                <h2 class="text-3xl font-bold text-gray-800">
+                  Additional Information
+                </h2>
+                <p class="text-gray-600 leading-relaxed">
+                  Explore comprehensive details about our innovative approach,
+                  key features, and unique value proposition. This section
+                  provides deeper insights into our mission, methodology,
+                  and the transformative solutions we offer.
+                </p>
+                <div class="flex space-x-4">
+                  <button class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                    Learn More
+                  </button>
+                  <button
+                    class="border border-blue-500 text-blue-500 px-6 py-2 rounded-lg hover:bg-blue-50 transition-colors">
+                    Contact Us
+                  </button>
+                </div>
+              </div>
+              <div class="hidden md:block">
+                <img src="./images/meeting-img.jpg" alt="Additional Information"
+                  class="w-full h-auto rounded-lg shadow-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab-content-2" class="tab-content mt-4">
+          <div class="h-[60vh] flex items-center justify-center py-12">
+            <div class="container mx-auto grid md:grid-cols-2 gap-8 items-center">
+              <div class="space-y-6">
+                <h2 class="text-3xl font-bold text-gray-800">
+                  Frequently Asked Questions
+                </h2>
+                <p class="text-gray-600 leading-relaxed">
+                  Find answers to the most common questions about our services,
+                  approach, and solutions. Our comprehensive FAQ section is
+                  designed to provide clear, concise information to help you
+                  make informed decisions.
+                </p>
+                <div class="space-y-4">
+                  <details class="border-b pb-2">
+                    <summary class="cursor-pointer font-semibold text-gray-700 hover:text-blue-600 transition-colors">
+                      What services do you offer?
+                    </summary>
+                    <p class="text-gray-600 mt-2">
+                      We provide comprehensive consulting, technology solutions,
+                      and strategic support across multiple industries.
+                    </p>
+                  </details>
+                  <details class="border-b pb-2">
+                    <summary class="cursor-pointer font-semibold text-gray-700 hover:text-blue-600 transition-colors">
+                      How can I get started?
+                    </summary>
+                    <p class="text-gray-600 mt-2">
+                      Contact our team for a free initial consultation.
+                      We'll discuss your needs and create a tailored approach.
+                    </p>
+                  </details>
+                  <details class="border-b pb-2">
+                    <summary class="cursor-pointer font-semibold text-gray-700 hover:text-blue-600 transition-colors">
+                      What is our core value ?
+                    </summary>
+                    <p class="text-gray-600 mt-2">
+                      Contact our team for a free initial consultation.
+                      We'll discuss your needs and create a tailored approach.
+                    </p>
+                  </details>
+                </div>
+                <div class="flex space-x-4 pt-4">
+                  <button class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                    View All Questions
+                  </button>
+                  <button
+                    class="border border-blue-500 text-blue-500 px-6 py-2 rounded-lg hover:bg-blue-50 transition-colors">
+                    Contact Support
+                  </button>
+                </div>
+              </div>
+              <div class="hidden md:block">
+                <img
+                  src="https://images.pexels.com/photos/5428830/pexels-photo-5428830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Frequently Asked Questions" class="w-full h-auto rounded-lg shadow-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab-content-3" class="tab-content mt-4 hidden">
+          <div class="">
+            <h2 class="text-[28px] font-medium mb-[24px]">Customer Reviews</h2>
+          </div>
+
+          <div class="flex items-center gap-3 mb-3.5">
+            <div class="star">
+              <i class="fa-solid fa-star" style="color: #080808;"></i>
+              <i class="fa-solid fa-star" style="color: #080808;"></i>
+              <i class="fa-solid fa-star" style="color: #080808;"></i>
+              <i class="fa-solid fa-star" style="color: #080808;"></i>
+              <i class="fa-regular fa-star" style="color: #080808;"></i>
+            </div>
+            <p class="text-base">11 reviews</p>
+          </div>
+          <div class="mb-3.5">
+            <p class="text-[18px]">Be the first to review <span class="font-semibold text-[20px]">Tray Table</span></p>
+          </div>
+          <div
+            class="flex w-full max-h-[72px] border-2 border-[#E8ECEF] justify-between items-center p-2.5 rounded-2xl mb-8">
+            <textarea class="flex-grow resize-none outline-none placeholder-gray-400 mr-4 te"
+              placeholder="Write your review here..."></textarea>
+            <button type="button" class="bg-black text-white px-[40px] py-[9px] rounded-full text-[16px]">
+              Write Review
+            </button>
+          </div>
+          <div class="flex justify-between mb-[40px]">
+            <h2 class="text-[28px] font-medium">11 Reviews</h2>
+            <select id="sortOptions" name="sort"
+              class="border-2 border-[#E8ECEF] rounded-md pr-[80px] pl-3.5 py-[10px] ">
+              <option class="text-[17px] font-semibold" value="Newest">Newest</option>
+              <option class="text-[17px] font-semibold" value="Oldest">Oldest</option>
+              <option class="text-[17px] font-semibold" value="Low">Trending</option>
+            </select>
+          </div>
+          <!-- Review part -->
+          <div class="max-w-full w-full flex flex-col gap-y-9 mb-6">
+            <!-- 1st person review -->
+            <div class="flex items-start space-x-[40px] border-b-2 border-slate-100 pb-[24px]">
+              <img
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt="Profile" class="w-16 h-16 rounded-full object-cover">
+              <div class="flex-1">
+                <div class="flex justify-between items-center">
+                  <h2 class="font-semibold text-lg">Sofia Harvetz</h2>
+                </div>
+                <div class="text-black-500 mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p class="text-gray-600 text-lg font-normal">
+                  I bought it 3 weeks ago and now come back just to say "Awesome Product". I really enjoy it. At vero
+                  eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                  atque corrupt et quas molestias excepturi sint non provident.
+                </p>
+                <div class="flex gap-2.5 ml-[10%]">
+                  <button class="hover:cursor-pointer ">Like</button>
+                  <button class="hover:cursor-pointer">Reply</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of 1st person review -->
+            <div class="flex items-start space-x-[40px] border-b-2 border-slate-100 pb-[24px]">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/2d68/b448/ac71ffb74b99039b69fca7eb2adeecf4?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=NNdz0ZECYvshBxItqOo5XNhAfyG11PhPtCW8ajXUY0o54ZqUDtOrltmJB0O3ygMUxE2866sWazbusZ-vwRLvMM1jcD5lgnxroZ06z4D2yHKc-kaefrFPs14MoP4FePCGF0TqL-dezmdS6rBM2J9yanCG7v0F6xsXMRz0dy2sB0rO80S7yJZfJR6WuxU9wSd~G9iodDtXtwq8LX9cy~xm1Gls9WvN6UuABwHd3s5VUaAdHceguXmsLxqCSCv~9-RYaeZfT6zFjCYQmLwB3-MgEzRH9kcoz4uArL2t4MJHpKuCIqTS8IOBSuRlFay6VUPRRDjsH-7K4LwVfsvdZcrv5g__"
+                alt="Profile" class="w-16 h-16 rounded-full object-cover">
+              <div class="flex-1">
+                <div class="flex justify-between items-center">
+                  <h2 class="font-semibold text-lg">Sofia Harvetz</h2>
+                </div>
+                <div class="text-black-500 mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p class="text-gray-600 text-lg font-normal">
+                  I bought it 3 weeks ago and now come back just to say "Awesome Product". I really enjoy it. At vero
+                  eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                  atque corrupt et quas molestias excepturi sint non provident.
+                </p>
+                <div class="flex gap-2.5 ml-[10%]">
+                  <button class="hover:cursor-pointer ">Like</button>
+                  <button class="hover:cursor-pointer">Reply</button>
+                </div>
+
+              </div>
+            </div>
+            <!-- end of 1st person review -->
+            <div class="flex items-start space-x-[40px] border-b-2 border-slate-100 pb-[24px]">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/fef2/b7d7/6bcbfccd1f6e6a542aa3e3cb0306f89c?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=kaDXS7N56cd4JzTorDKUOtgXq4vlpGaKLNsgV0mEDL3eaNs0yUETbKezbSdwO8phEVkrux8yKob9iQNsQSCziMRckY32sONZYW8Jq6k3vac3NJixpkHUW2Z2miWEzKjaxSTEQt4d48jtHLHdNpaTYiRc1Em38BpOZ~xepD5HHXGJutnpmYenyEc4FCmTmMxJlsuLyer2cGdBvIquOAXh-cpp2USoVJbpQI9whhAfRO0gR8HVjr29Zbavcy9J5X96-L2eU2Q~6OLRn~dgRUNpqQ0qYOVHjyIQlswa3WYKcAeeK5UzA8WkFBpy06WQhalYrZLeDuA5x0qKwZNs4UOK2A__"
+                alt="Profile" class="w-16 h-16 rounded-full object-cover">
+              <div class="flex-1">
+                <div class="flex justify-between items-center">
+                  <h2 class="font-semibold text-lg">Sofia Harvetz</h2>
+                </div>
+                <div class="text-black-500 mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p class="text-gray-600 text-lg font-normal">
+                  I bought it 3 weeks ago and now come back just to say "Awesome Product". I really enjoy it. At vero
+                  eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                  atque corrupt et quas molestias excepturi sint non provident.
+                </p>
+                <div class="flex gap-2.5 ml-[10%]">
+                  <button class="hover:cursor-pointer ">Like</button>
+                  <button class="hover:cursor-pointer">Reply</button>
+                </div>
+
+              </div>
+            </div>
+            <!-- end of 1st person review -->
+            <div class="flex items-start space-x-[40px] border-b-2 border-slate-100 pb-[24px]">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/a341/aaf6/e8f8169ad00cac006584058d85fc5dad?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JZNB4B5bn2q4W9pnO~feuYqsJoYL1xstyanPKYwEIM5fJV9iE7bfuMT0HFhRXuMlgvHuGCmfnrrhC5HtJscMWEi9PxKEaFcTyHv5IYH7EorMFLI8p8GF0XozYsbdEQdHGpZjWyByKNm5Iio0qW4dIAiEyKjPxmwOWWtB~DxcOiwJIdK8kaW1NviXUnGAs6s231GI09eIUQwY4pqAuQkc4~z5cwdHZzZchbNBiSI2xYe3KOwHVmsKICMNJqv4bDHx9YmEIEPHildinCtqFmwc7-Izg-VL6xxxeu1shRk~49u3mdRHQqnOhzF0YoNHwdRNXfCPFx9dMY5e215rPIq-pg__"
+                alt="Profile" class="w-16 h-16 rounded-full object-cover">
+              <div class="flex-1">
+                <div class="flex justify-between items-center">
+                  <h2 class="font-semibold text-lg">Sofia Harvetz</h2>
+                </div>
+                <div class="text-black-500 mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p class="text-gray-600 text-lg font-normal">
+                  I bought it 3 weeks ago and now come back just to say "Awesome Product". I really enjoy it. At vero
+                  eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                  atque corrupt et quas molestias excepturi sint non provident.
+                </p>
+                <div class="flex gap-2.5 ml-[10%]">
+                  <button class="hover:cursor-pointer ">Like</button>
+                  <button class="hover:cursor-pointer">Reply</button>
+                </div>
+
+              </div>
+            </div>
+            <!-- end of 1st person review -->
+            <div class="flex items-start space-x-[40px] border-b-2 border-slate-100 pb-[24px]">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/fbee/bffb/ad67ac62a1529eb723526726093127ba?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=lfcWjKFxi-iF0zDMa1PvjLrGg-hCZwUpeOSv4ekXf-X66Qy0Y2ftfwz5qcedy2OmEQLPO3vAem8JOAJtEp9ty5ZKJXcFckHPV3HTlBN-Aiejq3dy9k-o-~mcL0JGtJYATrWCDziHYpZoZxv9qCJuld6qAdpKA6kX8tE0jUOL~fhs5giOYPdiA7PZQ7cISCXZKA1CE9bWNnEMpbWoEHF4R6xWpd~VIuJkgf7aT6yCPnwoX6wwfRUEzmkHcFRtqVeVpg9OSGp6366wfsdhI3jn1oo8ARKaePwcezOce20h~QOziGHmy-GNgg7Z4mDy6Ep4hUDVLj7dGpv6fm9-XipuPw__"
+                alt="Profile" class="w-16 h-16 rounded-full object-cover">
+              <div class="flex-1">
+                <div class="flex justify-between items-center">
+                  <h2 class="font-semibold text-lg">Sofia Harvetz</h2>
+                </div>
+                <div class="text-black-500 mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p class="text-gray-600 text-lg font-normal">
+                  I bought it 3 weeks ago and now come back just to say "Awesome Product". I really enjoy it. At vero
+                  eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                  atque corrupt et quas molestias excepturi sint non provident.
+                </p>
+                <div class="flex gap-2.5 ml-[10%]">
+                  <button class="hover:cursor-pointer ">Like</button>
+                  <button class="hover:cursor-pointer">Reply</button>
+                </div>
+
+              </div>
+            </div>
+            <!-- end of 1st person review -->
+            <div class="flex items-start space-x-[40px] border-b-2 border-slate-100 pb-[24px]">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/afbd/ad72/fa5447b52d45b50abafb9a689af596ab?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FMdknE84dxuTDRV-Vq3-08W3wEHFFVc~kBEuj3vvvlk1EFPNbX~P7nLEoSwCI34xoZW4V4VfdOCoZDq9Yhfi27RJd1L-6l~QuEqLwJTWfmgYuLDIpkCtCyd8KLpTRaH5vV1GWjZxOWS1Ph2sRhFkeMzkyQTyTE9Qxd6Lsx6U9SlRGvfhB3G~fniHTnVuFi7CcqjDCLkJ-aalQpi7NAnpPTo0FuSvt4djdUOiHSh2xUtjQ4tspYc9HaXhLpXbIlISaClxZWVNbYqIBvpwcAdp4hpS3bsxSIpGZZZGHWY6A5tP83os8yDdbnXfaoy8ez3XLmaq8WBYAJ~Enb8aCgmobg__"
+                alt="Profile" class="w-16 h-16 rounded-full object-cover">
+              <div class="flex-1">
+                <div class="flex justify-between items-center">
+                  <h2 class="font-semibold text-lg">Sofia Harvetz</h2>
+                </div>
+                <div class="text-black-500 mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-600 text-lg font-normal">
+                  I bought it 3 weeks ago and now come back just to say "Awesome Product". I really enjoy it. At vero
+                  eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                  atque corrupt et quas molestias excepturi sint non provident.
+                </p>
+                <div class="flex gap-2.5 ml-[10%]">
+                  <button class="hover:cursor-pointer ">Like</button>
+                  <button class="hover:cursor-pointer">Reply</button>
+                </div>
+              </div>
+            </div>
+            <!-- end of  person review -->
+          </div>
+          <!-- end of review part -->
+          <div class="flex justify-center">
+            <button class="text-[#141718] rounded-full border-2 py-[6px] px-[40px] font-medium text-[16px]">Load More
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- end of tab section for review  -->
+    </div>
+    <!-- end of container -->
+  </section>
+  <!-- end of product section  -->
+  <!-- newsletter section -->
+  <section class="relative overflow-hidden bg-slate-100">
+    <div class="flex items-center justify-between max-w-screen-xl mx-auto py-[100px]">
+      <!-- Left: Drawer image -->
+      <div
+        class="w-1/3 max-h-[600px] hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 translate-x-[-200px]">
+        <img src="./images/newsletter-2img.png" class="w-full" alt="Drawer" />
+      </div>
+      <!-- Center: Newsletter signup -->
+      <div class="w-full md:w-2/4 text-center px-4 mx-auto relative z-10">
+        <div class="mb-6">
+          <h2 class="text-3xl font-medium mb-2">Join Our Newsletter</h2>
+          <p class="text-sm text-gray-600">Sign up for deals, new products and promotions</p>
+        </div>
+        <!-- Form -->
+        <div class="flex border-b border-gray-300 max-w-md mx-auto">
+          <div class="flex items-center mr-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <input type="email" placeholder="Email address" class="flex-grow py-2 bg-transparent focus:outline-none">
+          <button type="submit" class="text-gray-500 hover:text-gray-900 focus:outline-none">
+            Signup
+          </button>
+        </div>
+      </div>
+      <!-- Right: Sofa image -->
+      <div
+        class="max-w-[900px] hidden lg:block absolute right-0 top-[200px] transform -translate-y-1/2 translate-x-[500px]">
+        <img src="./images/newsletter-img-1.png" class=" w-[900px]  xl:w-[1000px] max-h-[500px]"
+          alt="Armchair with throw blanket" />
+      </div>
+    </div>
+  </section>
+  <!-- footer section -->
+  <section class="bg-black text-white">
+    <div class="container  pt-[80px] pb-[55px] ">
+      <!-- Desktop version -->
+      <div class="hidden md:block">
+        <!-- Top section with logo and navigation -->
+        <div class="flex justify-between items-center mb-6">
+          <!-- Left: Logo and tagline -->
+          <div class="flex items-center">
+            <h2 class="text-[22px] font-medium mr-6">3legant.</h2>
+            <div class="w-px h-6 bg-gray-700 mx-4"></div>
+            <p class="text-[14px] text-gray-300">Gift & Decoration Store</p>
+          </div>
+
+          <!-- Right: Navigation links -->
+          <ul class="flex items-center gap-8 text-[14px]">
+            <li class="cursor-pointer hover:text-gray-300">Home</li>
+            <li class="cursor-pointer hover:text-gray-300">Shop</li>
+            <li class="cursor-pointer hover:text-gray-300">Product</li>
+            <li class="cursor-pointer hover:text-gray-300">Blog</li>
+            <li class="cursor-pointer hover:text-gray-300">Contact Us</li>
+          </ul>
+        </div>
+
+        <!-- Bottom section with copyright and social -->
+        <div class="border-t border-gray-800 pt-6">
+          <div class="flex justify-between items-center">
+            <!-- Left: Copyright text -->
+            <div class="text-[12px] text-gray-300">
+              Copyright © 2023 3legant. All rights reserved
+            </div>
+            <!-- Middle: Terms links -->
+            <div class="flex gap-4 text-[12px] text-gray-300">
+              <a href="#" class="hover:text-white">Privacy Policy</a>
+              <a href="#" class="hover:text-white">Terms of Use</a>
+            </div>
+            <!-- Right: Social icons -->
+            <div class="flex gap-6">
+              <a href="#" aria-label="Instagram" class="hover:text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" aria-label="Facebook" class="hover:text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="YouTube" class="hover:text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                  <path
+                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17">
+                  </path>
+                  <path d="m10 15 5-3-5-3z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile version (exactly matching the image) -->
+      <div class="md:hidden flex flex-col items-center text-center">
+        <!-- Logo section -->
+        <h2 class="text-[22px] font-medium mb-4">3legant.</h2>
+        <div class="w-[40px] h-[1px] bg-gray-700 mb-4"></div>
+        <p class="text-[14px] text-gray-300 mb-8">Gift & Decoration Store</p>
+        <!-- Navigation links - vertical stack -->
+        <ul class="flex flex-col gap-6 text-[14px] mb-8">
+          <li class="cursor-pointer hover:text-gray-300">
+            <a href="./index.html">Home</a>
+          </li>
+
+          <li class="cursor-pointer hover:text-gray-300">Shop</li>
+          <li class="cursor-pointer hover:text-gray-300">
+            <a href="./product.html">Product</a>
+          </li>
+          
+
+          <li class="cursor-pointer hover:text-gray-300">Blog</li>
+          <li class="cursor-pointer hover:text-gray-300">
+            <a href="./signin.html">Contact Us</a>
+          </li>
+
+          <!-- Horizontal divider -->
+          <div class="w-full h-[1px] bg-gray-800 mb-8"></div>
+          <!-- Social icons -->
+          <div class="flex justify-center gap-6 mb-4">
+            <a href="#" aria-label="Instagram" class="hover:text-gray-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="hover:text-gray-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="YouTube" class="hover:text-gray-300">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                <path
+                  d="M2.5 17a24.12 24.12 0 0 1 0-10a2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17">
+                </path>
+                <path d="m10 15 5-3-5-3z"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Privacy and Terms links -->
+          <div class="flex justify-center gap-4 text-[12px] text-gray-300 mb-4">
+            <a href="#" class="hover:text-white">Privacy Policy</a>
+            <a href="#" class="hover:text-white">Terms of Use</a>
+          </div>
+
+          <!-- Copyright text -->
+          <div class="text-[12px] text-gray-300">
+            Copyright © 2023 3legant. All rights reserved
+          </div>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>

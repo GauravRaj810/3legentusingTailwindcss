@@ -110,6 +110,8 @@ var featureSwiper = new Swiper(".featureSwiper", {
   },
 });
 
+
+
 // Sign up page *******************
 function togglePasswordVisibility() {
     const passwordField = document.getElementById('password');
@@ -122,65 +124,26 @@ function togglePasswordVisibility() {
         passwordField.type = 'password';
     }
 }
-
-
 // ************ product page   ***********************
-// Initialize thumbnail swiper
-// Initialize thumbnail swiper
 document.addEventListener("DOMContentLoaded", function () {
-    // Initialize thumbnail swiper
-    var productThumbsSwiper = new Swiper(".product-thumbs-swiper", {
+  // Initialize thumbnail swiper
+  var productThumbsSwiper = new Swiper(".product-thumbs-swiper", {
       spaceBetween: 10,
       slidesPerView: 3,
       freeMode: true,
       watchSlidesProgress: true,
-    });
-  
-    // Initialize main swiper with thumbs
-    var productMainSwiper = new Swiper(".product-main-swiper", {
+  });
+
+  // Initialize main swiper with thumbs
+  var productMainSwiper = new Swiper(".product-main-swiper", {
       spaceBetween: 10,
+      grabCursor: true,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
       },
       thumbs: {
-        swiper: productThumbsSwiper,
+          swiper: productThumbsSwiper,
       },
-    });
-  
-    // Countdown timer functionality
-    function updateCountdown() {
-      // Set target date (example: 2 days, 12 hours, 45 minutes, 5 seconds from now)
-      const targetDate = new Date();
-      targetDate.setDate(targetDate.getDate() + 2); // 2 days from now
-      targetDate.setHours(targetDate.getHours() + 12); // 12 more hours
-      targetDate.setMinutes(targetDate.getMinutes() + 45); // 45 more minutes
-      targetDate.setSeconds(targetDate.getSeconds() + 5); // 5 more seconds
-  
-      const now = new Date();
-      const difference = targetDate - now;
-  
-      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-  
-      // Update countdown elements
-      document.querySelector('.countdown-days').textContent = days.toString().padStart(2, '0');
-      document.querySelector('.countdown-hours').textContent = hours.toString().padStart(2, '0');
-      document.querySelector('.countdown-minutes').textContent = minutes.toString().padStart(2, '0');
-      document.querySelector('.countdown-seconds').textContent = seconds.toString().padStart(2, '0');
-    }
-  
-    // Initial call and then update every second
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
   });
-  
-
-
-
-
-
-
-
+});
