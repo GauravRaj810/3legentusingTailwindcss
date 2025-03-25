@@ -2,20 +2,14 @@
 
 
 @theme{
-  --color-clr-light-green:#38CB89;
-}
-@theme{
   --color-footer-bg-clr:#141718;
+  --color-clr-light-green:#38CB89;
+  --color-primary: #E5E7EB;
 }
 
 @utility container {
     @apply max-w-[1180px] mx-auto px-5;
 }
-
-
-
-
-
 
 /* Animation to slide up the banner */
 @keyframes slideUp {
@@ -56,7 +50,6 @@
   width: 100%;               
   height: 6px;               
 }
-
 .swiper-pagination-progressbar {
   background-color: lightgray;  
 }
@@ -69,7 +62,6 @@
   .toaster-img{
     max-width: 300px;
   }
- 
 }
 @media(max-width:483px){
   .toaster-img{
@@ -92,8 +84,6 @@
   }
 }
 
-
-
 /* sign up page  */
 @media (max-width: 768px) {
   .sign-up-wrapper {
@@ -103,7 +93,7 @@
       width: 100%;
   }
   .img-holder {
-      height: 40vh;
+      height: 60vh;
   }
 }
 

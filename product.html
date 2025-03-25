@@ -165,11 +165,9 @@
         <div class="w-full md:w-1/2">
           <!-- Main Product Image Slider -->
           <div class="relative bg-gray-100 mb-4">
-            <!-- "NEW" Badge -->
             <div class="absolute top-4 left-4 z-10 bg-white text-black font-bold py-1 px-3 rounded">
               NEW
             </div>
-            <!-- Sale Badge -->
             <div class="absolute top-16 left-4 z-10 bg-emerald-500 text-white font-bold py-1 px-3 rounded">
               -50%
             </div>
@@ -199,13 +197,13 @@
           <div class="swiper product-thumbs-swiper w-full h-[75px] sm:h-[167px] ">
             <div class="swiper-wrapper">
               <div class="swiper-slide border border-gray-200 ">
-                <img src="./images/img-1-table.png" class="object-cover w-full h-full" alt="Thumbnail 1" />
+                <img src="./images/img-1-table.png" class="object-cover w-full h-full opacity-80 hover:opacity-100 transition-all" alt="Thumbnail 1" />
               </div>
               <div class="swiper-slide border border-gray-200">
-                <img src="./images/t-1.jpg" class="object-cover w-full h-full" alt="Thumbnail 2" />
+                <img src="./images/t-1.jpg" class="object-cover w-full h-full opacity-80 hover:opacity-100 transition-all" alt="Thumbnail 2" />
               </div>
               <div class="swiper-slide border border-gray-200">
-                <img src="./images/t-2.jpg" class="object-cover w-full h-full" alt="Thumbnail 3" />
+                <img src="./images/t-2.jpg" class="object-cover w-full h-full opacity-80 hover:opacity-100 transition-all" alt="Thumbnail 3" />
               </div>
             </div>
           </div>
@@ -325,7 +323,7 @@
       <!-- tab section for review  -->
       <div class="mt-5 ">
         <!-- Tab Navigation -->
-        <div class="flex space-x-6 border-b border-gray-200">
+        <div class="flex space-x-6 border-b border-gray-200 ">
           <button class="py-2 px-4 text-xl font-semibold text-gray-600 hover:text-black focus:outline-none" id="tab-1"
             onclick="showTab(1)">
             Additional Info
@@ -637,14 +635,13 @@
           </div>
           <!-- end of review part -->
           <div class="flex justify-center">
-            <button class="text-[#141718] rounded-full border-2 py-[6px] px-[40px] font-medium text-[16px]">Load More
+            <button class="text-[#141718] rounded-full border-2 py-[6px] px-[40px] font-medium text-[16px] hover:bg-slate-200 transition-all hover:cursor-pointer">Load More
             </button>
           </div>
         </div>
       </div>
       <!-- end of tab section for review  -->
     </div>
-    <!-- end of container -->
   </section>
   <!-- end of product section  -->
   <!-- newsletter section -->
@@ -765,7 +762,7 @@
           <li class="cursor-pointer hover:text-gray-300">
             <a href="./product.html">Product</a>
           </li>
-          
+
 
           <li class="cursor-pointer hover:text-gray-300">Blog</li>
           <li class="cursor-pointer hover:text-gray-300">
@@ -815,5 +812,4 @@
     </div>
   </section>
 </body>
-
 </html>
