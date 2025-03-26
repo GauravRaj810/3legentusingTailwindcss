@@ -34,7 +34,7 @@
     <h2 class="font-semibold text-xs sm:text-[16px] md:text[18px] text-slate-800">
       30% off storewide — Limited time!
       <a href="https://www.enactsoft.com/solutions/laraback/#"><span
-          class="text-blue-500 ml-1 py-0.5 border-b-1 border-blue-500 cursor-pointer group transition-all hover:text-blue-700">
+          class="text-blue-500 ml-1 py-0.5 border-b-1 border-cta-blue cursor-pointer group transition-all hover:text-blue-700">
           Shop Now
           <i
             class="fa-solid fa-arrow-right-long transform transition-transform duration-300 group-hover:translate-x-1 hover:text-blue-700"></i>
@@ -99,7 +99,7 @@
         </ul>
         <!-- utility bar -->
         <div class="utility-bar flex gap-4 items-center ">
-          <!-- serch bar -->
+         
           <div class="utility-search-bar hover:cursor-pointer hidden md:block">
             <img src="./images/search 02.svg" alt="search icon">
           </div>
@@ -137,10 +137,32 @@
           <li class=" text-xl font-semibold ">3legant Home </li>
           <i class="fa-solid fa-house" style="color: #0d0d0d;"></i>
         </div>
-        <li class="text-xl font-semibold ">Trending </li>
-        <li>Best Sellers </li>
-        <li>Furnitures </li>
-        <li class="pb-3 border-b-3 border-slate-200">Movers and shakers </li>
+        <li class="text-xl font-semibold ">Pages </li>
+        <li>
+          <a href="#home" class="relative group hover:text-black">
+            Home
+            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all group-hover:w-full"></span>
+          </a>
+        </li>
+        <li>
+          <a href="./product.html" class="relative group hover:text-black">
+            Product
+            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all group-hover:w-full"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="relative group hover:text-black">
+            Shop
+            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all group-hover:w-full"></span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="relative group hover:text-black">
+            Contact Us
+            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all group-hover:w-full"></span>
+          </a>
+        </li>
+
         <li class="text-xl font-semibold ">Top categories for you </li>
         <li>Mobiles </li>
         <li>Computers </li>
@@ -187,7 +209,8 @@
         <div
           class="swiper-button-prev hidden sm:flex bg-white text-black !rounded-full !p-4 shadow-md hover:bg-gray-200 transition-all">
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="absolute  !-top-[0px] bottom-0 left-0 w-full h-[6px]">
+        </div>
       </div>
       <!-- hero-section Content-->
       <div class="flex-col gap-8 lg:gap-3 flex md:flex-row  justify-between items-center ">
@@ -581,7 +604,7 @@
         <!-- sale banner description container -->
         <div class="max-w-[453px] w-full flex flex-col justify-center pl-5 pb-8  md:pl-0  md:pb-0">
           <!-- sale baner sub-title  -->
-          <h3 class="text-[#377DFF] font-bold  text-[16px] mb-2 lg:mb-3">SALE UP TO 35% OFF</h3>
+          <h3 class="text-cta-blue font-bold  text-[16px] mb-2 lg:mb-3">SALE UP TO 35% OFF</h3>
           <!-- sale baner title  -->
           <h2 class="font-medium    text-[25px]  lg:text-[36px] mb-2 lg:mb-3"><span class="uppercase ">hundreds</span>
             of lower prices!</h2>
@@ -818,7 +841,6 @@
           <a href="#" class="hover:text-white">Privacy Policy</a>
           <a href="#" class="hover:text-white">Terms of Use</a>
         </div>
-
         <!-- Copyright text -->
         <div class="text-[12px] text-gray-300">
           Copyright © 2023 3legant. All rights reserved

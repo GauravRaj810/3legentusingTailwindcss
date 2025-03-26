@@ -5,6 +5,7 @@
   --color-footer-bg-clr:#141718;
   --color-clr-light-green:#38CB89;
   --color-primary: #E5E7EB;
+  --color-cta-blue: #1447E6
 }
 
 @utility container {
@@ -57,6 +58,11 @@
 .swiper-pagination .swiper-pagination-progressbar-fill {
   background-color: #000000 !important;  /* Ensure the progress bar fill is black */
 }
+
+
+
+
+
 /* media querries for the toaster img */
 @media(max-width:639px){
   .toaster-img{
