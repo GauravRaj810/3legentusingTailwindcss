@@ -101,13 +101,15 @@
         <!-- utility bar -->
         <div class="utility-bar flex gap-1 items-center ">
           <div
-            class="utility-search-bar  hover:cursor-pointer   hidden   md:block  !hover:bg-gray-100  hover:rounded-full     p-2     ">
-            <img src="./images/search 02.svg" alt="search icon"  />
+            class="utility-search-bar  hover:cursor-pointer   hidden   md:block  hover:bg-gray-100  hover:rounded-full     p-2">
+            <img src="./images/search 02.svg" alt="search icon" />
           </div>
-          <div class="utility-search-bar  hover:cursor-pointer   hidden   md:block  hover:bg-gray-100  hover:rounded-full     p-2  ">
+          <div
+            class="utility-search-bar  hover:cursor-pointer   hidden   md:block  hover:bg-gray-100  hover:rounded-full     p-2  ">
             <a href="./signup.html"><img src="./images/user.svg" alt="user icon"></a>
           </div>
-          <div class="utility-search-bar  hover:cursor-pointer   hidden   md:block  hover:bg-gray-100  hover:rounded-full     p-2  "
+          <div
+            class="utility-search-bar  hover:cursor-pointer   hidden   md:block  hover:bg-gray-100  hover:rounded-full     p-2  "
             title="Get ready to fill you bag!">
             <img src="./images/shopping bag.svg" alt="bag-icon">
           </div>
@@ -119,6 +121,7 @@
   </header>
   <!-- end of header -->
   <div class="w-full h-[1px] bg-gray-200 mb-8"></div>
+  <!-- mobile menu for the product  -->
   <div class="mobile-menu-item  hidden md:hidden mb-5" id="menu-item-section ">
     <div class="container">
       <div>
@@ -136,7 +139,10 @@
       <ul class="flex  flex-col gap-3 ">
         <div class="3legent-home flex justify-between items-center pb-3 border-b-3 border-slate-200">
           <li class=" text-xl font-semibold ">3legant Home </li>
-          <i class="fa-solid fa-house" style="color: #0d0d0d;"></i>
+          <div class="flex gap-x-2 ">
+            <div class="pt-0.5 text-base"><a href="./signup.html"><img src="./images/user.svg" alt=""></a></div>
+            <a href="./index.html"><i class="fa-solid fa-house" style="color: #0d0d0d;"></i></a>
+          </div>
         </div>
         <li class="text-xl font-semibold ">Pages </li>
         <li>
@@ -158,11 +164,12 @@
           </a>
         </li>
         <li>
-          <a href="#" class="relative group hover:text-black">
+          <a href="#" class="relative group hover:text-black ">
             Contact Us
-            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all group-hover:w-full"></span>
+            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all group-hover:w-full "></span>
           </a>
         </li>
+        <div class="border-b-3 border-slate-200"></div>
 
         <li class="text-xl font-semibold ">Top categories for you </li>
         <li>Mobiles </li>
@@ -371,7 +378,8 @@
             </button>
           </div>
           <!-- Add to Cart Button -->
-          <button class="w-full bg-black text-white font-medium py-3 mb-6 cursor-pointer">
+          <button
+            class="w-full bg-black text-white font-medium py-3 mb-6 cursor-pointer hover:bg-slate-800 transition-colors">
             Add to Cart
           </button>
 
@@ -445,7 +453,7 @@
                 </p>
                 <div class="space-y-4">
                   <details class="border-b pb-2">
-                    <summary class="cursor-pointer font-semibold text-gray-700 hover:text-blue-600 transition-colors">
+                    <summary class="cursor-pointer font-semibold text-gray-700 hover:text-rose-600 transition-colors">
                       What services do you offer?
                     </summary>
                     <p class="text-gray-600 mt-2">
@@ -750,7 +758,7 @@
                 </p>
                 <div class="flex space-x-4">
                   <button
-                    class="bg-black cursor-pointer  text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                    class="bg-black cursor-pointer  text-white px-6 py-2 rounded-lg hover:bg-slate-800 transition-colors">
                     Learn More
                   </button>
                   <button
@@ -809,7 +817,7 @@
                   </details>
                 </div>
                 <div class="flex space-x-4 pt-4">
-                  <button class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                  <button class="bg-common-black text-white px-6 py-2 rounded-lg hover:bg-slate-800 transition-colors">
                     View All Questions
                   </button>
                   <button
@@ -849,7 +857,7 @@
             <textarea class="flex-grow resize-none outline-none placeholder-gray-400 mr-4 te"
               placeholder="Write your review here..."></textarea>
             <button type="button"
-              class="bg-black text-white px-[40px] py-[9px] rounded-full text-[16px] cursor-pointer">
+              class="bg-black text-white px-[40px] py-[9px] rounded-full text-[16px] cursor-pointer hover:bg-slate-800">
               Write something !
             </button>
           </div>
@@ -1188,7 +1196,7 @@
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
               </svg>
             </a>
-            <a href="#" aria-label="YouTube" class="hover:text-gray-300">
+            <a href="https://www.youtube.com/@FunwithGaurav3103" aria-label="YouTube" class="hover:text-gray-300">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
                 <path

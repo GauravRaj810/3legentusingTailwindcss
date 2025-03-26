@@ -1,5 +1,6 @@
 // ************* promtion cross button **********************
 
+
 const promoBanner = document.querySelector("#promo-banner");
 const crossBtnIcon = document.querySelector("#cross-btn i");
 

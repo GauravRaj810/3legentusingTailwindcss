@@ -1,13 +1,14 @@
 @import "tailwindcss";
-
-
 @theme{
   --color-footer-bg-clr:#141718;
-  --color-clr-light-green:#38CB89;
+  --color-light-green:#38CB89;
   --color-primary: #f7fafc;
-  --color-cta-blue: #1447E6
+  --color-cta-blue: #1447E6;
+  --color-promo-gray: #edf2f7;
+  --color-hero-text: #6C7275;
+  --color-common-black: #000000;
+  --color-common-white: #ffffff;
 }
-
 @utility container {
     @apply max-w-[1180px] mx-auto px-5;
 }
@@ -25,12 +26,10 @@
     max-height: 0;
   }
 }
-
 .slide-up {
   animation: slideUp 0.5s ease-out forwards;
   overflow: hidden; /* Ensures content doesn't overflow during animation */
 }
-
 /* Optional: If needed, you can use custom CSS to reset styles for Swiper's default arrows */
 .swiper-button-next,
 .swiper-button-prev {
@@ -39,10 +38,6 @@
   height: 55px;
   font-size: 5px !important;
 }
-
-
-
-
 /* Ensure the pagination is at the bottom with a black progress bar */
 .swiper-pagination {
   position: absolute !important;        
@@ -59,36 +54,6 @@
   background-color: #000000 !important;  /* Ensure the progress bar fill is black */
 }
 
-
-
-
-
-/* media querries for the toaster img */
-@media(max-width:639px){
-  .toaster-img{
-    max-width: 300px;
-  }
-}
-@media(max-width:483px){
-  .toaster-img{
-    max-width: 250px;
-  }
-}
-@media(max-width:434px){
-  .toaster-img{
-    max-width: 220px;
-  }
-}
-@media(max-width:404px){
-  .toaster-img{
-    max-width: 200px;
-  }
-}
-@media(max-width:386px){
-  .toaster-img{
-    max-width: 170px;
-  }
-}
 
 /* sign up page  */
 @media (max-width: 768px) {

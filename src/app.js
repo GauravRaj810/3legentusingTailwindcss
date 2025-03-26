@@ -130,31 +130,31 @@ function startCountdown() {
 // Start the countdown when the page loads
 document.addEventListener("DOMContentLoaded", startCountdown);
 
+
 // ************* increasing count *****************
-document.addEventListener("DOMContentLoaded", () => {
-  const decreaseBtn = document.querySelector("button:first-child");
-  const increaseBtn = document.querySelector("button:last-child");
-  const quantityInput = document.querySelector("input");
+document.addEventListener('DOMContentLoaded', () => {
+  const decreaseBtn = document.querySelector('button:first-child');
+  const increaseBtn = document.querySelector('button:last-child');
+  const quantityInput = document.querySelector('input');
 
   let quantity = 1;
 
-  decreaseBtn.addEventListener("click", () => {
-    if (quantity > 1) {
-      quantity--;
-      quantityInput.value = quantity;
-    }
+  decreaseBtn.addEventListener('click', () => {
+      if (quantity > 1) {
+          quantity--;
+          quantityInput.value = quantity;
+      }
   });
 
-  increaseBtn.addEventListener("click", () => {
-    quantity++;
-    quantityInput.value = quantity;
+  increaseBtn.addEventListener('click', () => {
+      quantity++;
+      quantityInput.value = quantity;
   });
 });
 
 
 
-
-
+// ************* hamburger on product page working *********************
 const crossHamburgerBtn = document.querySelector("#cross-hamburger-btn");
 const mobileMenu = document.querySelector("#mobile-menu");
 const BreadCrumb = document.querySelector(".Breadcrumb");
